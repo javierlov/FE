@@ -1,0 +1,266 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FacturaElectronica.IntegrationService.Setup", "FacturaElectronica.IntegrationService.Setup\FacturaElectronica.Service.Setup.vdproj", "{0FE38C1E-8B1A-4AD3-B26C-DDDF247A897F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.FacturaElectronica.IntegrationService", "Test.FacturaElectronica.IntegrationService\Test.FacturaElectronica.IntegrationService.csproj", "{388F24B8-8FDE-4FCF-B7B0-281E4475A77D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{243E25E7-1526-4EA2-84CA-4E741179BB61} = {243E25E7-1526-4EA2-84CA-4E741179BB61}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturaElectronica.Utils", "FacturaElectronica.Utils\FacturaElectronica.Utils.csproj", "{9C63D3A0-458A-44A6-9367-A64129D4926A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturaElectronica.WebServices", "FacturaElectronica.WebServices\FacturaElectronica.WebServices.csproj", "{243E25E7-1526-4EA2-84CA-4E741179BB61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.FacturaElectronica.WebServices", "Test.FacturaElectronica.WebServices\Test.FacturaElectronica.WebServices.csproj", "{80F389AF-FCE0-4ECE-BAFD-54EB73399B21}"
+	ProjectSection(ProjectDependencies) = postProject
+		{243E25E7-1526-4EA2-84CA-4E741179BB61} = {243E25E7-1526-4EA2-84CA-4E741179BB61}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturaElectronica.DBEngine", "FacturaElectronica.DBEngine\FacturaElectronica.DBEngine.csproj", "{5A341D30-F668-4AAC-94B8-10411A23FB67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturaElectronica.Common", "FacturaElectronica.Common\FacturaElectronica.Common.csproj", "{311905BE-09D4-4B9C-910A-F34E9DC65894}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FacturaElectronica.Configuracion", "FacturaElectronica.Configuracion", "{B7321FDF-A637-4DE3-8EBE-FAE7B7092657}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{9C63D3A0-458A-44A6-9367-A64129D4926A}|FacturaElectronica.Utils.dll;{5A341D30-F668-4AAC-94B8-10411A23FB67}|FacturaElectronica.DBEngine.dll;{311905BE-09D4-4B9C-910A-F34E9DC65894}|FacturaElectronica.Common.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/FacturaElectronica.Configuracion"
+		Debug.AspNetCompiler.PhysicalPath = "FacturaElectronica.Configuracion\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\FacturaElectronica.Configuracion\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/FacturaElectronica.Configuracion"
+		Release.AspNetCompiler.PhysicalPath = "FacturaElectronica.Configuracion\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\FacturaElectronica.Configuracion\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1635"
+		StartServerOnDebug = "false"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FacturaElectronica.Monitor", "FacturaElectronica.Monitor", "{94298A1F-AB5C-40AE-8E38-57396D2C5C5B}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{9C63D3A0-458A-44A6-9367-A64129D4926A}|FacturaElectronica.Utils.dll;{5A341D30-F668-4AAC-94B8-10411A23FB67}|FacturaElectronica.DBEngine.dll;{311905BE-09D4-4B9C-910A-F34E9DC65894}|FacturaElectronica.Common.dll;{243E25E7-1526-4EA2-84CA-4E741179BB61}|FacturaElectronica.WebServices.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/FacturaElectronica.Monitor"
+		Debug.AspNetCompiler.PhysicalPath = "FacturaElectronica.Monitor\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\FacturaElectronica.Monitor\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/FacturaElectronica.Monitor"
+		Release.AspNetCompiler.PhysicalPath = "FacturaElectronica.Monitor\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\FacturaElectronica.Monitor\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1439"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturaElectronica.IntegrationService", "FacturaElectronica.IntegrationService\FacturaElectronica.IntegrationService.csproj", "{78967EF0-77FC-4C5C-BB34-B7A43335E21A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturaElectronica.IntegrationService.Engine", "FacturaElectronica.IntegrationService.Engine\FacturaElectronica.IntegrationService.Engine.csproj", "{CDE98399-8686-43B9-8D60-76AA31F7ECEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturaElectronica.WSPrint", "FacturaElectronica.WSPrint\FacturaElectronica.WSPrint.csproj", "{3099B77C-5054-45CA-AE8F-EB2AC2A88CF3}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://acc13:8080/tfs/accendo
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FacturaElectronica.Common\\FacturaElectronica.Common.csproj
+		SccProjectName1 = FacturaElectronica.Common
+		SccLocalPath1 = FacturaElectronica.Common
+		SccWebProject2 = true
+		SccProjectUniqueName2 = FacturaElectronica.Configuracion
+		SccProjectName2 = FacturaElectronica.Configuracion
+		SccLocalPath2 = FacturaElectronica.Configuracion
+		SccProjectEnlistmentChoice2 = 2
+		SccProjectUniqueName3 = FacturaElectronica.DBEngine\\FacturaElectronica.DBEngine.csproj
+		SccProjectName3 = FacturaElectronica.DBEngine
+		SccLocalPath3 = FacturaElectronica.DBEngine
+		SccProjectUniqueName4 = FacturaElectronica.IntegrationService.Engine\\FacturaElectronica.IntegrationService.Engine.csproj
+		SccProjectName4 = FacturaElectronica.IntegrationService.Engine
+		SccLocalPath4 = FacturaElectronica.IntegrationService.Engine
+		SccProjectUniqueName5 = FacturaElectronica.IntegrationService.Setup\\FacturaElectronica.Service.Setup.vdproj
+		SccProjectName5 = FacturaElectronica.IntegrationService.Setup
+		SccLocalPath5 = FacturaElectronica.IntegrationService.Setup
+		SccProjectUniqueName6 = FacturaElectronica.IntegrationService\\FacturaElectronica.IntegrationService.csproj
+		SccProjectName6 = FacturaElectronica.IntegrationService
+		SccLocalPath6 = FacturaElectronica.IntegrationService
+		SccWebProject7 = true
+		SccProjectUniqueName7 = FacturaElectronica.Monitor
+		SccProjectName7 = FacturaElectronica.Monitor
+		SccLocalPath7 = FacturaElectronica.Monitor
+		SccProjectEnlistmentChoice7 = 2
+		SccProjectUniqueName8 = FacturaElectronica.Utils\\FacturaElectronica.Utils.csproj
+		SccProjectName8 = FacturaElectronica.Utils
+		SccLocalPath8 = FacturaElectronica.Utils
+		SccProjectUniqueName9 = FacturaElectronica.WebServices\\FacturaElectronica.WebServices.csproj
+		SccProjectName9 = FacturaElectronica.WebServices
+		SccLocalPath9 = FacturaElectronica.WebServices
+		SccProjectUniqueName10 = FacturaElectronica.WSPrint\\FacturaElectronica.WSPrint.csproj
+		SccProjectName10 = FacturaElectronica.WSPrint
+		SccLocalPath10 = FacturaElectronica.WSPrint
+		SccProjectUniqueName11 = Test.FacturaElectronica.IntegrationService\\Test.FacturaElectronica.IntegrationService.csproj
+		SccProjectName11 = Test.FacturaElectronica.IntegrationService
+		SccLocalPath11 = Test.FacturaElectronica.IntegrationService
+		SccProjectUniqueName12 = Test.FacturaElectronica.WebServices\\Test.FacturaElectronica.WebServices.csproj
+		SccProjectName12 = Test.FacturaElectronica.WebServices
+		SccLocalPath12 = Test.FacturaElectronica.WebServices
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FE38C1E-8B1A-4AD3-B26C-DDDF247A897F}.Debug|.NET.ActiveCfg = Debug
+		{0FE38C1E-8B1A-4AD3-B26C-DDDF247A897F}.Debug|.NET.Build.0 = Debug
+		{0FE38C1E-8B1A-4AD3-B26C-DDDF247A897F}.Debug|Any CPU.ActiveCfg = Debug
+		{0FE38C1E-8B1A-4AD3-B26C-DDDF247A897F}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{0FE38C1E-8B1A-4AD3-B26C-DDDF247A897F}.Release|.NET.ActiveCfg = Release
+		{0FE38C1E-8B1A-4AD3-B26C-DDDF247A897F}.Release|.NET.Build.0 = Release
+		{0FE38C1E-8B1A-4AD3-B26C-DDDF247A897F}.Release|Any CPU.ActiveCfg = Release
+		{0FE38C1E-8B1A-4AD3-B26C-DDDF247A897F}.Release|Mixed Platforms.ActiveCfg = Release
+		{388F24B8-8FDE-4FCF-B7B0-281E4475A77D}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{388F24B8-8FDE-4FCF-B7B0-281E4475A77D}.Debug|.NET.Build.0 = Debug|Any CPU
+		{388F24B8-8FDE-4FCF-B7B0-281E4475A77D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388F24B8-8FDE-4FCF-B7B0-281E4475A77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388F24B8-8FDE-4FCF-B7B0-281E4475A77D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{388F24B8-8FDE-4FCF-B7B0-281E4475A77D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{388F24B8-8FDE-4FCF-B7B0-281E4475A77D}.Release|.NET.ActiveCfg = Release|Any CPU
+		{388F24B8-8FDE-4FCF-B7B0-281E4475A77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388F24B8-8FDE-4FCF-B7B0-281E4475A77D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388F24B8-8FDE-4FCF-B7B0-281E4475A77D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{388F24B8-8FDE-4FCF-B7B0-281E4475A77D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9C63D3A0-458A-44A6-9367-A64129D4926A}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{9C63D3A0-458A-44A6-9367-A64129D4926A}.Debug|.NET.Build.0 = Debug|Any CPU
+		{9C63D3A0-458A-44A6-9367-A64129D4926A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C63D3A0-458A-44A6-9367-A64129D4926A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C63D3A0-458A-44A6-9367-A64129D4926A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9C63D3A0-458A-44A6-9367-A64129D4926A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9C63D3A0-458A-44A6-9367-A64129D4926A}.Release|.NET.ActiveCfg = Release|Any CPU
+		{9C63D3A0-458A-44A6-9367-A64129D4926A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C63D3A0-458A-44A6-9367-A64129D4926A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C63D3A0-458A-44A6-9367-A64129D4926A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9C63D3A0-458A-44A6-9367-A64129D4926A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{243E25E7-1526-4EA2-84CA-4E741179BB61}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{243E25E7-1526-4EA2-84CA-4E741179BB61}.Debug|.NET.Build.0 = Debug|Any CPU
+		{243E25E7-1526-4EA2-84CA-4E741179BB61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{243E25E7-1526-4EA2-84CA-4E741179BB61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{243E25E7-1526-4EA2-84CA-4E741179BB61}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{243E25E7-1526-4EA2-84CA-4E741179BB61}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{243E25E7-1526-4EA2-84CA-4E741179BB61}.Release|.NET.ActiveCfg = Release|Any CPU
+		{243E25E7-1526-4EA2-84CA-4E741179BB61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{243E25E7-1526-4EA2-84CA-4E741179BB61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{243E25E7-1526-4EA2-84CA-4E741179BB61}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{243E25E7-1526-4EA2-84CA-4E741179BB61}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{80F389AF-FCE0-4ECE-BAFD-54EB73399B21}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{80F389AF-FCE0-4ECE-BAFD-54EB73399B21}.Debug|.NET.Build.0 = Debug|Any CPU
+		{80F389AF-FCE0-4ECE-BAFD-54EB73399B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F389AF-FCE0-4ECE-BAFD-54EB73399B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F389AF-FCE0-4ECE-BAFD-54EB73399B21}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{80F389AF-FCE0-4ECE-BAFD-54EB73399B21}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{80F389AF-FCE0-4ECE-BAFD-54EB73399B21}.Release|.NET.ActiveCfg = Release|Any CPU
+		{80F389AF-FCE0-4ECE-BAFD-54EB73399B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F389AF-FCE0-4ECE-BAFD-54EB73399B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80F389AF-FCE0-4ECE-BAFD-54EB73399B21}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{80F389AF-FCE0-4ECE-BAFD-54EB73399B21}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5A341D30-F668-4AAC-94B8-10411A23FB67}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{5A341D30-F668-4AAC-94B8-10411A23FB67}.Debug|.NET.Build.0 = Debug|Any CPU
+		{5A341D30-F668-4AAC-94B8-10411A23FB67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A341D30-F668-4AAC-94B8-10411A23FB67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A341D30-F668-4AAC-94B8-10411A23FB67}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5A341D30-F668-4AAC-94B8-10411A23FB67}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5A341D30-F668-4AAC-94B8-10411A23FB67}.Release|.NET.ActiveCfg = Release|Any CPU
+		{5A341D30-F668-4AAC-94B8-10411A23FB67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A341D30-F668-4AAC-94B8-10411A23FB67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A341D30-F668-4AAC-94B8-10411A23FB67}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5A341D30-F668-4AAC-94B8-10411A23FB67}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{311905BE-09D4-4B9C-910A-F34E9DC65894}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{311905BE-09D4-4B9C-910A-F34E9DC65894}.Debug|.NET.Build.0 = Debug|Any CPU
+		{311905BE-09D4-4B9C-910A-F34E9DC65894}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{311905BE-09D4-4B9C-910A-F34E9DC65894}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{311905BE-09D4-4B9C-910A-F34E9DC65894}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{311905BE-09D4-4B9C-910A-F34E9DC65894}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{311905BE-09D4-4B9C-910A-F34E9DC65894}.Release|.NET.ActiveCfg = Release|Any CPU
+		{311905BE-09D4-4B9C-910A-F34E9DC65894}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{311905BE-09D4-4B9C-910A-F34E9DC65894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{311905BE-09D4-4B9C-910A-F34E9DC65894}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{311905BE-09D4-4B9C-910A-F34E9DC65894}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B7321FDF-A637-4DE3-8EBE-FAE7B7092657}.Debug|.NET.ActiveCfg = Debug|.NET
+		{B7321FDF-A637-4DE3-8EBE-FAE7B7092657}.Debug|.NET.Build.0 = Debug|.NET
+		{B7321FDF-A637-4DE3-8EBE-FAE7B7092657}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{B7321FDF-A637-4DE3-8EBE-FAE7B7092657}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{B7321FDF-A637-4DE3-8EBE-FAE7B7092657}.Release|.NET.ActiveCfg = Debug|.NET
+		{B7321FDF-A637-4DE3-8EBE-FAE7B7092657}.Release|.NET.Build.0 = Debug|.NET
+		{B7321FDF-A637-4DE3-8EBE-FAE7B7092657}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{B7321FDF-A637-4DE3-8EBE-FAE7B7092657}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B7321FDF-A637-4DE3-8EBE-FAE7B7092657}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{94298A1F-AB5C-40AE-8E38-57396D2C5C5B}.Debug|.NET.ActiveCfg = Debug|.NET
+		{94298A1F-AB5C-40AE-8E38-57396D2C5C5B}.Debug|.NET.Build.0 = Debug|.NET
+		{94298A1F-AB5C-40AE-8E38-57396D2C5C5B}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{94298A1F-AB5C-40AE-8E38-57396D2C5C5B}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{94298A1F-AB5C-40AE-8E38-57396D2C5C5B}.Release|.NET.ActiveCfg = Debug|.NET
+		{94298A1F-AB5C-40AE-8E38-57396D2C5C5B}.Release|.NET.Build.0 = Debug|.NET
+		{94298A1F-AB5C-40AE-8E38-57396D2C5C5B}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{94298A1F-AB5C-40AE-8E38-57396D2C5C5B}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{94298A1F-AB5C-40AE-8E38-57396D2C5C5B}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{78967EF0-77FC-4C5C-BB34-B7A43335E21A}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{78967EF0-77FC-4C5C-BB34-B7A43335E21A}.Debug|.NET.Build.0 = Debug|Any CPU
+		{78967EF0-77FC-4C5C-BB34-B7A43335E21A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78967EF0-77FC-4C5C-BB34-B7A43335E21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78967EF0-77FC-4C5C-BB34-B7A43335E21A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{78967EF0-77FC-4C5C-BB34-B7A43335E21A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{78967EF0-77FC-4C5C-BB34-B7A43335E21A}.Release|.NET.ActiveCfg = Release|Any CPU
+		{78967EF0-77FC-4C5C-BB34-B7A43335E21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78967EF0-77FC-4C5C-BB34-B7A43335E21A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78967EF0-77FC-4C5C-BB34-B7A43335E21A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{78967EF0-77FC-4C5C-BB34-B7A43335E21A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CDE98399-8686-43B9-8D60-76AA31F7ECEB}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{CDE98399-8686-43B9-8D60-76AA31F7ECEB}.Debug|.NET.Build.0 = Debug|Any CPU
+		{CDE98399-8686-43B9-8D60-76AA31F7ECEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE98399-8686-43B9-8D60-76AA31F7ECEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE98399-8686-43B9-8D60-76AA31F7ECEB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CDE98399-8686-43B9-8D60-76AA31F7ECEB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CDE98399-8686-43B9-8D60-76AA31F7ECEB}.Release|.NET.ActiveCfg = Release|Any CPU
+		{CDE98399-8686-43B9-8D60-76AA31F7ECEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE98399-8686-43B9-8D60-76AA31F7ECEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE98399-8686-43B9-8D60-76AA31F7ECEB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CDE98399-8686-43B9-8D60-76AA31F7ECEB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{3099B77C-5054-45CA-AE8F-EB2AC2A88CF3}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{3099B77C-5054-45CA-AE8F-EB2AC2A88CF3}.Debug|.NET.Build.0 = Debug|Any CPU
+		{3099B77C-5054-45CA-AE8F-EB2AC2A88CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3099B77C-5054-45CA-AE8F-EB2AC2A88CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3099B77C-5054-45CA-AE8F-EB2AC2A88CF3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{3099B77C-5054-45CA-AE8F-EB2AC2A88CF3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{3099B77C-5054-45CA-AE8F-EB2AC2A88CF3}.Release|.NET.ActiveCfg = Release|Any CPU
+		{3099B77C-5054-45CA-AE8F-EB2AC2A88CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3099B77C-5054-45CA-AE8F-EB2AC2A88CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3099B77C-5054-45CA-AE8F-EB2AC2A88CF3}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{3099B77C-5054-45CA-AE8F-EB2AC2A88CF3}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

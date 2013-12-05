@@ -1,0 +1,38 @@
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.DBEngine.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.DBEngine.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.Common.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.Common.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.DBEngine\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.DBEngine\obj\Debug\FacturaElectronica.DBEngine.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.DBEngine\obj\Debug\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.DBEngine\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronica\FacturaElectronica.DBEngine\obj\Debug\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.DBEngine\obj\Debug\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBEngine\bin\Debug\app.config
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.DBEngine.dll.config
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBEngine\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBEngine\obj\Debug\FacturaElectronica.DBEngine.Properties.Resources.resources
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBEngine\obj\Debug\GenerateResource.read.1.tlog
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBEngine\obj\Debug\GenerateResource.write.1.tlog
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBEngine\obj\Debug\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBEngine\obj\Debug\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.DBEngine\bin\Debug\app.config
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.DBEngine.dll.config
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.DBEngine\bin\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.DBEngine\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.DBEngine\obj\Debug\FacturaElectronica.DBEngine.Properties.Resources.resources
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.DBEngine\obj\Debug\GenerateResource.read.1.tlog
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.DBEngine\obj\Debug\GenerateResource.write.1.tlog
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.DBEngine\obj\Debug\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.DBEngine\obj\Debug\FacturaElectronica.DBEngine.pdb

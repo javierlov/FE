@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="PageFooter.Name" xml:space="preserve">
+    <value>PageFooter</value>
+  </metadata>
+  <metadata name="panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </metadata>
+  <metadata name="txtFechaVto.Name" xml:space="preserve">
+    <value>txtFechaVto</value>
+  </metadata>
+  <metadata name="txtCae.Name" xml:space="preserve">
+    <value>txtCae</value>
+  </metadata>
+  <metadata name="xrLabel3.Name" xml:space="preserve">
+    <value>xrLabel3</value>
+  </metadata>
+  <metadata name="xrLabel2.Name" xml:space="preserve">
+    <value>xrLabel2</value>
+  </metadata>
+  <metadata name="txtBarCodeCbte.Name" xml:space="preserve">
+    <value>txtBarCodeCbte</value>
+  </metadata>
+  <metadata name="xrPageInfo1.Name" xml:space="preserve">
+    <value>xrPageInfo1</value>
+  </metadata>
+  <metadata name="xrTableCell5.Name" xml:space="preserve">
+    <value>xrTableCell5</value>
+  </metadata>
+  <metadata name="label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </metadata>
+  <metadata name="txtDomicilio.Name" xml:space="preserve">
+    <value>txtDomicilio</value>
+  </metadata>
+  <metadata name="txtNombreEmpresa.Name" xml:space="preserve">
+    <value>txtNombreEmpresa</value>
+  </metadata>
+  <metadata name="label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </metadata>
+  <metadata name="tableCell3.Name" xml:space="preserve">
+    <value>tableCell3</value>
+  </metadata>
+  <metadata name="label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </metadata>
+  <metadata name="panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </metadata>
+  <metadata name="label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </metadata>
+  <metadata name="label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </metadata>
+  <metadata name="txtTipoIva.Name" xml:space="preserve">
+    <value>txtTipoIva</value>
+  </metadata>
+  <metadata name="txtCondiciondeVenta.Name" xml:space="preserve">
+    <value>txtCondiciondeVenta</value>
+  </metadata>
+  <metadata name="label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </metadata>
+  <metadata name="txtNumCuit.Name" xml:space="preserve">
+    <value>txtNumCuit</value>
+  </metadata>
+  <metadata name="txtNumRemito.Name" xml:space="preserve">
+    <value>txtNumRemito</value>
+  </metadata>
+  <metadata name="formattingRule1.Name" xml:space="preserve">
+    <value>formattingRule1</value>
+  </metadata>
+  <metadata name="TopMargin.Name" xml:space="preserve">
+    <value>TopMargin</value>
+  </metadata>
+  <metadata name="richText2.Name" xml:space="preserve">
+    <value>richText2</value>
+  </metadata>
+  <data name="richText2.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABhAG4AcwBpAGMAcABnADEAMgA1ADIADQAKAHsADQAKAFwAZgBvAG4AdAB0AGIAbAANAAoAewBcAGYAMAAgAFQAaQBtAGUAcwAgAE4AZQB3ACAAUgBvAG0AYQBuADsAfQANAAoAewBcAGYAMQAgAEEAcgBpAGEAbAA7AH0ADQAKAH0ADQAKAHsADQAKAFwAYwBvAGwAbwByAHQAYgBsAA0ACgA7AA0ACgBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMAA7AA0ACgBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMgA1ADUAOwANAAoAfQANAAoAewBcAHMAZQBjAHQAZABcAHAAYQByAGQAXABwAGwAYQBpAG4AXABxAGwAewBcAGYAMQBcAGYAcwAxADYAXABjAGYAMQAgAEMALgBVAC4ASQAuAFQALgAgAE4AXAB1ADEANwA2AFwAJwBiADAAOgB9AFwAZgAxAFwAZgBzADEANgBcAHAAYQByAFwAcABhAHIAZABcAHAAbABhAGkAbgBcAHEAbAB7AFwAZgAxAFwAZgBzADEANgBcAGMAZgAxACAASQBOAEcAUgBFAFMATwBTACAAQgBSAFUAVABPAFMAOgAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgAH0AXABmADEAXABmAHMAMQA2AFwAcABhAHIAXABwAGEAcgBkAFwAcABsAGEAaQBuAFwAcQBsAHsAXABmADEAXABmAHMAMQA2AFwAYwBmADEAIABJAE4ASQBDAEkATwAgAEQARQAgAEEAQwBUAEkAVgBJAEQAQQBEAEUAUwA6AH0AXABwAGEAcgB9AA0ACgB9AA0ACgA=</value>
+  </data>
+  <metadata name="tableRow1.Name" xml:space="preserve">
+    <value>tableRow1</value>
+  </metadata>
+  <metadata name="tableCell1.Name" xml:space="preserve">
+    <value>tableCell1</value>
+  </metadata>
+  <metadata name="tableCell2.Name" xml:space="preserve">
+    <value>tableCell2</value>
+  </metadata>
+  <metadata name="xrTableCell6.Name" xml:space="preserve">
+    <value>xrTableCell6</value>
+  </metadata>
+  <metadata name="xrTableCell13.Name" xml:space="preserve">
+    <value>xrTableCell13</value>
+  </metadata>
+  <metadata name="BottomMargin.Name" xml:space="preserve">
+    <value>BottomMargin</value>
+  </metadata>
+  <metadata name="controlStyle1.Name" xml:space="preserve">
+    <value>controlStyle1</value>
+  </metadata>
+  <metadata name="xrTable2.Name" xml:space="preserve">
+    <value>xrTable2</value>
+  </metadata>
+  <metadata name="xrTableRow2.Name" xml:space="preserve">
+    <value>xrTableRow2</value>
+  </metadata>
+  <metadata name="xrTableCell4.Name" xml:space="preserve">
+    <value>xrTableCell4</value>
+  </metadata>
+  <metadata name="xrTableCell12.Name" xml:space="preserve">
+    <value>xrTableCell12</value>
+  </metadata>
+  <metadata name="txtNumCodigo.Name" xml:space="preserve">
+    <value>txtNumCodigo</value>
+  </metadata>
+  <metadata name="txtLetraCbte.Name" xml:space="preserve">
+    <value>txtLetraCbte</value>
+  </metadata>
+  <metadata name="xrPanel4.Name" xml:space="preserve">
+    <value>xrPanel4</value>
+  </metadata>
+  <metadata name="txtTipoCbte.Name" xml:space="preserve">
+    <value>txtTipoCbte</value>
+  </metadata>
+  <metadata name="xrPanel1.Name" xml:space="preserve">
+    <value>xrPanel1</value>
+  </metadata>
+  <metadata name="xrRichText2.Name" xml:space="preserve">
+    <value>xrRichText2</value>
+  </metadata>
+  <data name="xrRichText2.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABhAG4AcwBpAGMAcABnADEAMgA1ADIADQAKAHsADQAKAFwAZgBvAG4AdAB0AGIAbAANAAoAewBcAGYAMAAgAFQAaQBtAGUAcwAgAE4AZQB3ACAAUgBvAG0AYQBuADsAfQANAAoAewBcAGYAMQAgAEEAcgBpAGEAbAA7AH0ADQAKAH0ADQAKAHsADQAKAFwAYwBvAGwAbwByAHQAYgBsAA0ACgA7AA0ACgBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMAA7AA0ACgBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMgA1ADUAOwANAAoAfQANAAoAewBcAHMAZQBjAHQAZABcAHAAYQByAGQAXABwAGwAYQBpAG4AXABxAHIAewBcAGYAMQBcAGYAcwAxADYAXABjAGYAMQAgADMAMAAtADYANwA2ADYAMwAxADAANwAtADcAfQBcAGYAMQBcAGYAcwAxADYAXABwAGEAcgBcAHAAYQByAGQAXABwAGwAYQBpAG4AXABxAHIAewBcAGYAMQBcAGYAcwAxADYAXABjAGYAMQAgADkAMAAxAC0AMQA2ADIAMwAzADAALQA1AH0AXABmADEAXABmAHMAMQA2AFwAcABhAHIAXABwAGEAcgBkAFwAcABsAGEAaQBuAFwAcQByAHsAXABmADEAXABmAHMAMQA2AFwAYwBmADEAIAAwADEALwAwADcALwAxADkAOQA0AH0AXABwAGEAcgB9AA0ACgB9AA0ACgA=</value>
+  </data>
+  <metadata name="xrLabel1.Name" xml:space="preserve">
+    <value>xrLabel1</value>
+  </metadata>
+  <metadata name="txtTipo.Name" xml:space="preserve">
+    <value>txtTipo</value>
+  </metadata>
+  <metadata name="txtNroCbte.Name" xml:space="preserve">
+    <value>txtNroCbte</value>
+  </metadata>
+  <metadata name="table1.Name" xml:space="preserve">
+    <value>table1</value>
+  </metadata>
+  <metadata name="tableRow2.Name" xml:space="preserve">
+    <value>tableRow2</value>
+  </metadata>
+  <metadata name="txtDayCbte.Name" xml:space="preserve">
+    <value>txtDayCbte</value>
+  </metadata>
+  <metadata name="txtMonthCbte.Name" xml:space="preserve">
+    <value>txtMonthCbte</value>
+  </metadata>
+  <metadata name="txtYearCbte.Name" xml:space="preserve">
+    <value>txtYearCbte</value>
+  </metadata>
+  <metadata name="panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </metadata>
+  <metadata name="winControlContainer1.Name" xml:space="preserve">
+    <value>winControlContainer1</value>
+  </metadata>
+  <metadata name="pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJ8AAABKCAYAAACl6IZ8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAK+wAA
+        CvsBy58dkAAAF5BJREFUeF7tXVesXMUZvkRR8pKXKI/BkACh22DAYDA2mA4GTDem995Mtak2HdNN7yUk
+        ECnJW154SB5QFEWK8hIFEeUhgkQKCbt76u61cTn5v3931nNnZ860s9jXMdLRBXbOmZl/vvn7/LPDRMP/
+        lHc/VG349LOJTV/8a2IizyeqjRsnJr7z3Ylv/eD7EzvM+OHEt/faY+J7K5fv0HC32z/3/0iB4vb7qvTo
+        xVXrx/tV3Rn7VDk96Y57Vx162oMH/57Qk+64T1XQ790Z+1atH82qsiNPrvJrbq186ZZdvawq6N3OEYu2
+        6JMsOKmR/kuaiy8NRPv0hLOq1JMOMf0lJ55VZZ79qeuUHbmoSk9eEjbn3lMvVikRHmBbv9O+1VoCU0bA
+        kgEngKf+RRs8aD9J7+H9dfQ32ffQqrhmmdOAOgtPrjbuNJPf35JPZ8bePPbYMVQ0l/KhJ53mroJ0UwAd
+        uD+SUCGAb4Lu1c6zqnTxeX79d599uUpmLyDA9Bce3MwEMp//DzCCI+K7BYHSNjDsPrT36aPptryBLry6
+        av3kAKdNV9d/SXPJllzqtxiEnOKO+yq86zs3vJOecq53f+WDq5nh+Pantt8A/Lz+nnv/2fFnMDia6Lxu
+        8AA0uElJIMzPuUQ7wK0BfAB/+eSaKj39guiNkNG3Oocc474YA5aV0pqEbEKoP62Zh/r3d+aFQWCX1xtq
+        WbLrbLe+J9/6aZVRY4hWF7EauyvE+1gQPDrRsDWAD9yj9+rbVe/1d6teJDdgVWTnmW4LIhGks/tBwdIH
+        IPAVu+3Z81ldilljqFnp2Rfb+y4ee4Y5Xcjuihkg3mXRsPSKrRt8L77B40t2mx0MAkEn0NkXDDFSCO92
+        n3rBq8+UdNzYdd1A4Jt8+4P6frtPv1hNAqWRSA8dLMBnWoythvM99zKPMT0jXhxhvvmt9ziDobjj/igR
+        yHrm0sud++vSRosBO3AAL0iy58H2PvsukzgWGwo8tpwPPHLrBx8ZYAAfVJNY0Qvpkp50tn1hIvW9oVqD
+        tZ2z0Lm//NLrosA+lGYXX1PfZzpr3hYRtYIwWMhi+cppAz7gobPnHN7ZoRuON/rMw5zB0N79wChRz75X
+        D1HfmXc8+3BD54f3rKpFfu2t1ToStzGdxLzLRKH+6/SfrUbsDjgfxpqdd0U0Z/AxAmJFoAADDCYXXbND
+        QYEYg7O/uebV99WhhW/KfxcCQoif5IQzpx34sICxgMD7ky+8bgVDqH9PXQ/WM6+4ydof5harVrDhSozN
+        CPTsxjvZeRwCGvUddsLCFzZ4XCMgPeq/Sy6M6cb5WPRSlCZGT2Yj4NLrrWBIjju9EbUInLYz/wRrf8Ut
+        y6O5OphKLYftzDo82o8DEGKXwFHc3mX/qrP/fNZlWjv3w3AiHKfTjzgmvPchVmI0JXaxQbAAIQ9Uk57i
+        qsgvvzHKImQH7BEnWecfq+8JRsH+RYrJ28RuLNjZiW4zbkJCNSrHY7E5/0TjhMqVj1fJ8WeyaEfERFZi
+        wZozBzHQFPha1B/CY1hM3yen97oaERlDQwYD+QxtYIgV7/KaWY0AGkx7jzlRqhgbkLfda55X+eATUbsW
+        E4JoTQ8+yko8QdyCxDxCLez1HnAhG+HZqdtAbNdV5LiMR27Todh3TBSgzr+JfprS9wQAWe9btqJ2zWI2
+        FOOCnNO1dMwuuCparnNK1XW3OYNPDKi88mYWya5+pybAxxyadCdfcNnaY0PFcCbWkUk6mPpJjm1G3xPg
+        YzrQN039YSwx8+FNfrhFr0zJwowNo7FjetE5wQs6+YZbpkNj4DtmcfBY60AY4w9jo+PMi4zjakrfE+Bj
+        zwaJVdN8kDgRw/kgcssHHrM4lilHLoZockJAfsm1Y1lUQaDGwDcGzsdWL2WohNKSRfZB5uhODBcyeTHq
+        RH2bDMZQNcLFZ8trCisrlGDypNAhLF3W/w49rsrOv7LqUuqRTVz5/N4E+NiypIxan35d2xZ33h8cbmOj
+        w+CWiI3nmsDHPrj7H9XSApZqqOuNRbqLdEmPPS1a7MqDBDuHzw7GxNdwS2AS+8zl9Ony7gejFr0J8GGR
+        4f7p7H84u4Ncn2Q/au9gVMVkgAAMvXd/PkKjpvU92ejITjt/pL/umtei9D2seXf18/a1zpdcFiXbbbtD
+        ZCvDPwZAApjpnKOq0iOTo0mxi/FiTMIJ7vpXePptXLBD7qZQSYKxFDfdNbJoTet7Ys3YMb7faOgru+ia
+        YEy4+hCZjuWqOKvGBj5dBAQ7HCnVDExbtoO02k1wPt/xygo6DkvZwAd6hoakOMOFspTVPsah74l56eLK
+        ncOOi9pAiU+qfox8D11MvIedB4dztuv+VffRZ6wLOx3Ax4YHcfiQYDxHf/aeO4UOZUD+nk+WDSeXUg7n
+        FJ/lj/qMIWRtWeS+8pZ1LYf9JQtPaVTv8x00dh/0w+Kiemt5uoAvRo9WY6EhIa4WRUtc16CfOT41uTSU
+        00Lf71DUyCYdRn5vKrHAddI6ccwRj3PMp7mmC/i6q9cEi16VE/noe7z4FE/Pb7jDOceQ468HHz0EDHTO
+        UP9e6Gm8iZQMD3CfUPA09R4AmN/5gHb3TBfwsegNzIPjsBcdzRTcwYcLsc54Sv9QtquPTnXxwEUSGnRw
+        iRcbuWJ2+PH9rJRAed/Ee9i9IJxukNMJfAm5lkIWkf2Qg7BUcdcDXlyILfdBJji7txyPQ3A+4XsfMs3b
+        e4SdjOO+HDKTakVyRhUJhCXaBJhCvgGlNaPwjjrQ6QS+3ktvBoleFp2D863wjfoAWOY8Pmd72cVDsWnQ
+        24fTymvL8f3L7DmJVn2wvOS6YSmIUKsnBHTiHdM5g+kEPha9lH4Vkh0Oa7V85CnW31zfZ9DudsBww0Lv
+        c9XdmNsiUXXZ3VEuFiuwXBtMvv9hldDhEYhhETaLAZTvuxyYfvTpKdxvuoEvoUQBVwCMGGCIqHioP5xF
+        IhUe6tHJOlcuxlEf5DdSooFPn2LMrF9StMgVW87teu98QCLwfMp8nVV9PWPmMCOZ43cexPEFH1tOdC5W
+        HmiT4BOFi1z/ghuhwpYz4ahh752fBYle0MrVYJBDZWpaG3NDxzXqVxML8+2xyCVO60Mb77ZraTflVKYs
+        JRaNcwsA4NdSHDc0rKQDJu9k4rzjAJ+oCyO4usvf9TTP3GAI1RESh6VDF9Vnw0JSqOOIyUzx6dvn9J03
+        6OpeWEuBcGTZpqedV3XIUmqqtosu7tgE5+v7tdyzrmOJhYpWoaLXFQDMvSkqoY4VFanG3TcziYBiR1q6
+        dpevimKf5fV38Ok1V8KZ2rFI32tqiYUmwMfqgiZ+Gguyuvddda9QmumkBMaDFK9xg49185qD/s50LSjl
+        CQX88tDqkYOekgWLgq0msQAsqsYFPpdcM2eq2RviFJ+rzy0EgOyYvuwGLdMYN/DBJOwUcGjROfAIVnQh
+        OhOK0ZXPvBT04fTc+DQtLBYKUjat8zknOjrQy7VJftXNzpZnCPg4D9BQgQAl2FyNDt+++0c+G0rMlXcJ
+        GxOoYkBJB65EFu3SA46I3um6s6yNid0xpdHX0Wlc4q8uAxrjaVPuZBNqkA6YLHIDy/pOoVVChftUAmFi
+        ou4w0u17FDC3ATGjiktNEFoXpG4CfEKXREHy/PrbvZ+CTunVFTMy0QfVt3zdJy6cSE0MGDE6zhpdV5fv
+        2tqEFrbU0gcn2E3sWYAQuXctAiSAiCOXqEhf3PtwVdy8nMt8tREjbCg2zHlhyhmQJsAHogKA4OpIYvB9
+        Nu00q2rtYk8qVYmcE43GoX/xJqXzMibQI7m1CWaggrFvuNXX1rExKv4drHPS0UKFLiaqyYtzGqKyfFNK
+        9dYYXttsCJElT6XknAirNGrSDyrGwylYz71SO55xgJ6Zg6VfJxp15h4bbZ3a2LTP79ipuopVTXE+n7Go
+        bXmDBYKvMzf8aKVpzKb61fLCI1GhyWgUvuVc3NuGQJ/MiZiFc30Xh4x0Y57u4MPpvdDzHTracQUwxSOg
+        oxsqBzTJdTn7WXPqzYazkd9T8sCPgy27Ak1th8UxOYGnO/hA/NRRvXGhH+t7ZFDYFr2JkijyeLBGk2++
+        b+3XNq6JlNJwmmTJLkQzihD49mquBtgWwAe/WFNciPU9ujnAtsi4N6Qpo4PL2VEpYFuf1t9x1gDXGsUA
+        pql3k4Ehg+rnpoFvC+DrknHXlOi1Fl6UCNkU+JjbUilgK7hsDZIFJzbmGokBIXYT3z5kKN0g5rEtgA9z
+        aQcerZRpzIYPZRbZ1lj83oq4OEbuN+qchjxYjmAE5nDFgE1+d1gx4GH7BXjbCvg6DZQ7Y6X/1KXO4EuO
+        OjVa3APwyK52BbyxHXw0Ge0ccZvgNw1CcDvcSpPs4757txXw4ZB2rOjlIj/3PeIMhJxqIcaKXk4aveoW
+        5z6tIJ0kvQ/lbEVxH3QwrkA0OB52DxJQoXSXVMvYOkCpwbYCPkwpobrVMRu+rryZjqY40BTr1fDRMX3W
+        ldsibpketHDKfbjoMBaM4HKIiohTcRllvXgPDgtGhSxBdNfU93G04/hsA6IHIjN0LpzSTzqcLw0572+Q
+        Wu/7F1ncbUoY8e0zqD0uBU5PPJvuzJrDwBGxUPzFf3MOGSwf1OMbPPh3caM4DAiOm9K5D06PIhdDj+LA
+        QYMZvISbq3FhsUva+7jabKD5tFyv7qyZbI/qmVTkVgoZJ96DDudLyxa51aBmhfaJGL5vn4207z3/SlVQ
+        FkhG6fK45r1Np6vadOKpJVc5oFTuNoEV5RdSKt6d0w3ik6++s2UG3Mist39kOwW2U2A7BbYFCvRQdRP3
+        CTdcsndboM0WmQOHaWB9OjzQ+cQgE8rhg14nv8dXG1A6vjoRtR3ewf8T7QrSMXVt5G+znwm3PFIp355D
+        PT/x7ZxyD6G7QtfB+IcPjgvAAj96cYVSsCbil6tW146NHb6kgqS4ofFie1H0vl5spjd+b5Fel1K2UUGq
+        i2lc7VmH8ZEHmUZc6WsQgYAO3tX8bireiHO/cH+pOFgLPR9FBEjPRIVZF5zwWtqq0WNisJ74Ql6HZ0o9
+        kMVL2V8lv8cZModsLrklCKe269du3nzWFD4rXRt1TDByQHBYzqkG5PJClXR3GNqLG4+EhSec3PhvAIev
+        54L7h0CoW+jy4aesY0M/w1rUAHXNccJ+v/X0BnDwPZ4ntdUtZOeABVUBY076Fte5GYAPFrVKU7ZaDZZy
+        hwq5czqb9D22yA89lukC8Km/mzDDKfZ0wZCVm6qLUhe9kH09OKurOi45rXsw2ClAACiVaIrsq0JVdF8n
+        KKxuUzHC7IwLBgvndowTNABnxMEplWDlI097jQ3fAnCQoFvc89DI95Dx7eO+AhCZkyhFtjt0dYKamt+P
+        vfYzm00VE0whMtzDq46LQbSyf58GynG4JkUwd3xodTj4wBVUFiuL3W8CfCAGAG+aNERCRoWNZMDgtBg4
+        RkgIEAuTKn48X/BtznruA1rN+DWBDxvX5FcFyNSNYQMfA0ZTKk1X3kIXdWGmJKlGJvChnYoT3iwD0NZy
+        Px3n4x1A5VWRrChfF5BLBWG+CfDhkj7oNi3UbdZwT9a3iMDyBOuiNPgNG4iPhxri2tBrZEDXgQ/fAcBM
+        m4NBo1zqpwMf05tKayBZwFQHB5we3EzM1QV8BZU3UemmO2SekqRQJQ8Xm5RultKBD+PmqyVQ2Ei6WqKg
+        f++6HL3VgQ8dl3TivQ614wZfP2X9sGr9n/5crf/0Mz60pC6y0J/EOFEiQgdSAI1LedApMmThwshAYqcu
+        i1vd8XXgQx28jBYI5WvZ2NIAmo0CSfzqwMdGyAuvVev/8TkX1E40lU0BDlQh8AEf2upopl4406ID+uoZ
+        HIhc+TywDny8UaTqWFYdT21gAh+cylsafFCqN/73qwr/rPv4t1pgyTqMrhwt5sexZM0lNB2q/p5pACOX
+        aNOBj3c8PTJ9CrqwWae3qmeQdeDDe70Pf8nzrNav5/onOn0Oxz19wae72oAPAD378vBb6rh1FSN04GMu
+        arvgrw5EJoNDjf9hkbNzLhkO+JvgfAy+r76qNq5bx9xD5VR80k0CgS5bBO/UxZN1IpNTlgYp6l2qE6gu
+        jg58bBFSkoZ6SBvjQ/07sQYm8E1+9Kv+JvvdJ6zfqWoBZ7KsWOkNPlidKl14foOLBvNbVoxsal5r5fbz
+        OoNDxopX/LsOfCJuK45MZnS4fCjixmztsh5E54lRHxDiTTdOdh3QVVYYE5RmHeexZYDodCcWJ4P4aUlO
+        aVfwISFWNwb5lJkOfOyyoDvhcCYDSQO6Y6jQRWUm4qLzDbmkcrcG+0xJpWGj5KhTRtQZXQZLHfhknBQ7
+        kvrhmirn6mphM37J5qsKxs35oD9hbEjB0hkIIBA7RQfRimLVE0axV6s+oCSsYsywqKRMbwb14886g6/7
+        8lvWDWCyduEQ5mr8ylgATCQEJMecFgw+kUUj66RspRLtUARcdrGYqiC4ulq8jpeawCcuZxERAWRTyNmz
+        RvDR9UnqYts4kq+fDwuS7Tu3Kp94bthXj6wrWz86EHbmLBzRr9jSG1SzQjjOlfMVhgoBcgFFXz8f3B3F
+        +aPnJnw4H8rk6lSShBzRWt+eJgPJBD5RbFPgBBulRfmKTsaHDnxcUpXMZYANFiRbkSg2KA0KVuOIkxns
+        XLk3tkdl9m2gMIFP6HTyjuU0rnn6W6x1li4DqSaH0KTzZYObeVCc2xV8qUHng9uqTucTibYqZ0oQ2npv
+        9CZKFpcWJ/OIYUlXFYyIc0oPU/uUfXtTxLzGySxccnDJCKzkhJPsgs13idSCUAc+jvdaKhAhjqlblFQ5
+        /ohLTXQuDVmv0IGPlXpyOcCqlHcnW6+GnDpUZFcV9aG1qyli2GEXw2gtYkQnupRGBsK5Wrv5uZebrV0C
+        pQ18beIW6lg4Z1JR/H2tXdEeqfTq5lRpxboupcNpJYQGfNz+uNHLCp24Hu8gZXGxE3jSdPVl3Ue6FHbS
+        sfJhoJ2sqQT+NM3isgUocQMd+DgJlUpMZBSxQAxT3qEwNBKleCTGCm6lFS8DPx/8hihqBKsU39RtCl4Q
+        SWzU+fng48IckddY5+dDQaU68KHPnK4iQNxVBQScy7JbJBR8eM9WnYJ9e6++7Qw+1g81sfwo8AkACg++
+        yH5FJnHvtc0JoiI1W3WuYlBQnk01mtnUl7znJvBBH1v3+z/Sqal5IyID3ElXtkEkSugcvugXc8GCmiIc
+        0F3y2+/d7AOrie3iO5ijqfwZl7RQ4sV1rpac7j5TNw8nIWiuW/UVu8xoKO5uisZwPxRlMQGnTucDDWSs
+        ACfp6VNvE9B+t87a1fn6oLyKD6WLzzPueFNsFd/EosmDMYJv9vxqw1etCqW+dOXXmCsoYZyCUnkA/JAD
+        OhxaUzz24bFdypih73UVTmIE3y9+Xa3/y185nqoaARCXuHF8ig7mqfMx5yPamE7OsW9PiZPbdD45Q0jG
+        Cn+L1BArB3R1taAj9sRL4MPHUxJ/rne2YXfBGsqvvMkdfP/+str4+T+rRHMvGJdv0HCFfNmKflBfcVuY
+        NgREPMaF679UgvmCT2wuztnTnEc2Rjje/4idzOlF+vo5AHKx8nFvJ7M6H1OpXKs/1DOrJVvqUNlAsExR
+        hbTu7yYWu++OLFBGIRZRp08ExgWosbAiNw0sX3cQJV+xqsK35b5x6Qz0ug2ff8GLkt96z0gbfBcsHjqc
+        SuQuqQcpBbyR4QIgquOCSBSn6sAluzfow4lYcHVsOhqJQ1MshjUgFuPDmNFG/gbTlS7c4QjHJ3/gsapt
+        wJVliYG7UHBAS/2OrXgQdF5xXlu8i7VrUzSpjlO1Sf8GLV1xkg0iKLXcD4FxPGwuW55S0tPUj04SKJHI
+        mJBeAcdlm7IdYK3ilHtGEYqSwGMaCICCb8v954uWVMhC3vjlf/ohz7/9vcrpQkDdWHNFJMn9TJLYQ/XO
+        hPyPYlwwKJCxkyHh0pJxi0wSdWwjdKIK/hAzJW0im6jJ4IpQ5orvr/3Nx/3Y7qZNfLdJedLoepRkiRY3
+        38V9ZJdeVxVEI3ks+E7pcJhcnU+X3uuuebV27BmVEi4cMILx8DgMpxX/BzrlxsI14dFKAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <metadata name="richText1.Name" xml:space="preserve">
+    <value>richText1</value>
+  </metadata>
+  <data name="richText1.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABhAG4AcwBpAFwAYQBuAHMAaQBjAHAAZwAxADIANQAyAFwAZABlAGYAZgAwAHsAXABmAG8AbgB0AHQAYgBsAHsAXABmADAAXABmAG4AaQBsAFwAZgBjAGgAYQByAHMAZQB0ADAAIABBAHIAaQBhAGwAOwB9AHsAXABmADEAXABmAG4AaQBsACAAQQByAGkAYQBsADsAfQB7AFwAZgAyAFwAZgBuAGkAbAAgAFQAaQBtAGUAcwAgAE4AZQB3ACAAUgBvAG0AYQBuADsAfQB9AA0ACgB7AFwAYwBvAGwAbwByAHQAYgBsACAAOwBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMAA7AH0ADQAKAFwAdgBpAGUAdwBrAGkAbgBkADQAXAB1AGMAMQBcAHAAYQByAGQAXABjAGYAMQBcAGwAYQBuAGcAMQAxADIANwA0AFwAYgBcAGYAcwAxADgAIABTAEUAVwAgAEUAVQBSAE8ARABSAEkAVgBFACAAQQBSAEcARQBOAFQASQBOAEEAIABTAC4AQQAuAFwAYwBmADAAXABiADAAXABmADEAXABwAGEAcgANAAoAXABjAGYAMQBcAGwAYQBuAGcAMQAwADMAMwBcAGYAMAAgAEQAYQB0AGEAMQBcAGMAZgAwAFwAbABhAG4AZwAxADEAMgA3ADQAXABmADEAXABwAGEAcgANAAoAXABjAGYAMQBcAGwAYQBuAGcAMQAwADMAMwBcAGYAMAAgAEQAYQB0AGEAMgBcAGMAZgAwAFwAbABhAG4AZwAxADEAMgA3ADQAXABmADEAXABwAGEAcgANAAoAXABjAGYAMQBcAGwAYQBuAGcAMQAwADMAMwBcAGYAMAAgAEQAYQB0AGEAMwBcAGMAZgAwAFwAbABhAG4AZwAxADEAMgA3ADQAXABmADEAXABwAGEAcgANAAoAXABjAGYAMQAgAEUALQBtAGEAaQBsADoAIABcAGwAYQBuAGcAMQAwADMAMwBcAGYAMAAgAEQAYQB0AGEANABcAGMAZgAwAFwAbABhAG4AZwAxADEAMgA3ADQAXABmADEAXABwAGEAcgANAAoAXABjAGYAMQAgAEkAVgBBADoAIABSAEUAUwBQAE8ATgBTAEEAQgBMAEUAIABJAE4AUwBDAFIASQBQAFQATwBcAGMAZgAwAFwAZgAyAFwAZgBzADIANABcAHAAYQByAA0ACgB9AA0ACgA=</value>
+  </data>
+  <metadata name="Detail.Name" xml:space="preserve">
+    <value>Detail</value>
+  </metadata>
+  <metadata name="xrPanel5.Name" xml:space="preserve">
+    <value>xrPanel5</value>
+  </metadata>
+  <metadata name="CbteDetails.Name" xml:space="preserve">
+    <value>CbteDetails</value>
+  </metadata>
+  <metadata name="xrTableRow1.Name" xml:space="preserve">
+    <value>xrTableRow1</value>
+  </metadata>
+  <metadata name="xrTableCellCantidad.Name" xml:space="preserve">
+    <value>xrTableCellCantidad</value>
+  </metadata>
+  <metadata name="xrTableCellCodigo.Name" xml:space="preserve">
+    <value>xrTableCellCodigo</value>
+  </metadata>
+  <metadata name="xrTableCellDetalle.Name" xml:space="preserve">
+    <value>xrTableCellDetalle</value>
+  </metadata>
+  <metadata name="xrTableCellNCM.Name" xml:space="preserve">
+    <value>xrTableCellNCM</value>
+  </metadata>
+  <metadata name="xrTableCellTotal.Name" xml:space="preserve">
+    <value>xrTableCellTotal</value>
+  </metadata>
+  <metadata name="GroupHeader1.Name" xml:space="preserve">
+    <value>GroupHeader1</value>
+  </metadata>
+  <metadata name="GroupFooter1.Name" xml:space="preserve">
+    <value>GroupFooter1</value>
+  </metadata>
+  <metadata name="txtObservaciones3.Name" xml:space="preserve">
+    <value>txtObservaciones3</value>
+  </metadata>
+  <data name="txtObservaciones3.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABhAG4AcwBpAGMAcABnADEAMgA1ADIADQAKAHsADQAKAFwAZgBvAG4AdAB0AGIAbAANAAoAewBcAGYAMAAgAFQAaQBtAGUAcwAgAE4AZQB3ACAAUgBvAG0AYQBuADsAfQANAAoAewBcAGYAMQAgAEEAcgBpAGEAbAA7AH0ADQAKAH0ADQAKAHsADQAKAFwAYwBvAGwAbwByAHQAYgBsAA0ACgA7AA0ACgBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMAA7AA0ACgBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMgA1ADUAOwANAAoAfQANAAoAewBcAHMAZQBjAHQAZABcAHAAYQByAGQAXABwAGwAYQBpAG4AXABxAGwAewBcAGYAMQBcAGYAcwAxADYAXABjAGYAMQAgAFwAdQA4ADIAMgAwAFwAJwA5ADMATgBvACAAcwBlACAAcgBlAGEAbABpAHoAYQAgAFAAZQByAGMAZQBwAGMAaQBcAHUAMgA0ADMAXAAnAGYAMwBuACAAZABlACAASQBuAGcAcgBlAHMAbwBzACAAQgByAHUAdABvAHMAIABwAG8AcgAgAGwAYQAgAFAAYwBpAGEALgAgAEQAZQAgAEIAdQBlAG4AbwBzACAAQQBpAHIAZQBzACwAIABwAG8AcgAgAGQAZQBjAGwAYQByAGEAcgAgAGUAbAAgAGMAbABpAGUAbgB0AGUALAAgAHEAdQBlACAAbABvAHMAfQBcAGYAMQBcAGYAcwAxADYAXABwAGEAcgBcAHAAYQByAGQAXABwAGwAYQBpAG4AXABxAGwAewBcAGYAMQBcAGYAcwAxADYAXABjAGYAMQAgAHAAcgBvAGQAdQBjAHQAbwBzACAAYQBkAHEAdQBpAHIAaQBkAG8AcwAsACAAdABlAG4AZAByAFwAdQAyADIANQBcACcAZQAxAG4AIABlAGwAIABjAGEAcgBcAHUAMgAyADUAXAAnAGUAMQBjAHQAZQByACAAZABlACAAQgBpAGUAbgAgAGQAZQAgAFUAcwBvACwAIABkAGUAIABhAGMAdQBlAHIAZABvACAAYQAgAGwAbwAgAHIAZQBxAHUAZQByAGkAZABvACAAcABvAHIAIABlAGwAIABBAHIAdAAuACAAMwA0ADAAIABpAG4AYwAgAGEAKQAgAGQAZQAgAGwAYQB9AFwAZgAxAFwAZgBzADEANgBcAHAAYQByAFwAcABhAHIAZABcAHAAbABhAGkAbgBcAHEAbAB7AFwAZgAxAFwAZgBzADEANgBcAGMAZgAxACAARABOACAAUwBlAHIAaQBlACAAQgAgADEALwAyADAAMAA0AFwAdQA4ADIAMgAxAFwAJwA5ADQAfQBcAHAAYQByAH0ADQAKAH0ADQAKAA==</value>
+  </data>
+  <metadata name="xrPanel6.Name" xml:space="preserve">
+    <value>xrPanel6</value>
+  </metadata>
+  <metadata name="txtObservaciones.Name" xml:space="preserve">
+    <value>txtObservaciones</value>
+  </metadata>
+  <data name="txtObservaciones.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABhAG4AcwBpAGMAcABnADEAMgA1ADIADQAKAHsADQAKAFwAZgBvAG4AdAB0AGIAbAANAAoAewBcAGYAMAAgAFQAaQBtAGUAcwAgAE4AZQB3ACAAUgBvAG0AYQBuADsAfQANAAoAfQANAAoAewANAAoAXABjAG8AbABvAHIAdABiAGwADQAKADsADQAKAFwAcgBlAGQAMABcAGcAcgBlAGUAbgAwAFwAYgBsAHUAZQAwADsADQAKAFwAcgBlAGQAMABcAGcAcgBlAGUAbgAwAFwAYgBsAHUAZQAyADUANQA7AA0ACgB9AA0ACgB7AFwAcwBlAGMAdABkAFwAcABhAHIAZABcAHAAbABhAGkAbgBcAHEAbABcAHAAYQByAH0ADQAKAH0ADQAKAA==</value>
+  </data>
+  <metadata name="xrPanel3.Name" xml:space="preserve">
+    <value>xrPanel3</value>
+  </metadata>
+  <metadata name="xrRichText1.Name" xml:space="preserve">
+    <value>xrRichText1</value>
+  </metadata>
+  <data name="xrRichText1.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABhAG4AcwBpAGMAcABnADEAMgA1ADIADQAKAHsADQAKAFwAZgBvAG4AdAB0AGIAbAANAAoAewBcAGYAMAAgAFQAaQBtAGUAcwAgAE4AZQB3ACAAUgBvAG0AYQBuADsAfQANAAoAewBcAGYAMQAgAEEAcgBpAGEAbAA7AH0ADQAKAH0ADQAKAHsADQAKAFwAYwBvAGwAbwByAHQAYgBsAA0ACgA7AA0ACgBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMAA7AA0ACgBcAHIAZQBkADAAXABnAHIAZQBlAG4AMABcAGIAbAB1AGUAMgA1ADUAOwANAAoAfQANAAoAewBcAHMAZQBjAHQAZABcAHAAYQByAGQAXABwAGwAYQBpAG4AXABxAGwAewBcAGYAMQBcAGYAcwAxADYAXABjAGYAMQAgACIATgBvACAAcwBlACAAZQBtAGkAdABlACAAZgBhAGMAdAB1AHIAYQAgAGQAZQAgAGMAcgBcAHUAMgAzADMAXAAnAGUAOQBkAGkAdABvACAAcABvAHIAIABlAHMAdABhACAAbwBwAGUAcgBhAGMAaQBcAHUAMgA0ADMAXAAnAGYAMwBuACAAcABvAHIAcQB1AGUAIABsAGEAIABtAGkAcwBtAGEAIABzAGUAIABjAGEAbgBjAGUAbABhAHIAXAB1ADIAMgA1AFwAJwBlADEAIABhAGwAIABjAG8AbgB0AGEAZABvACAAZABlAG4AdAByAG8AIABkAGUAIABsAG8AcwAgAHEAdQBpAG4AYwBlACAAZABcAHUAMgAzADcAXAAnAGUAZABhAHMALAAgAG8AIABzAGUAIABhAGIAbwBuAGEAcgBcAHUAMgAyADUAXAAnAGUAMQAgAG0AZQBkAGkAYQBuAHQAZQAgAGMAaABlAHEAdQBlACAAZABlACAAcABhAGcAbwAgAGQAaQBmAGUAcgBpAGQAbwAgAGUAbgAgAGMAYQBzAG8AIABxAHUAZQAgAGwAYQBzACAAYwBvAG4AZABpAGMAaQBvAG4AZQBzACAAYwBvAG4AdgBlAG4AaQBkAGEAcwAgAGUAeABjAGUAZABhAG4AIABkAGkAYwBoAG8AIABwAGwAYQB6AG8AIgAuAFwAbABpAG4AZQAgAE4ATwAgAFMARQAgAEEAQwBFAFAAVABBAE4AIABDAEgARQBRAFUARQBTACAARABFACAAVABFAFIAQwBFAFIATwBTAFwAbABpAG4AZQAgAEwAYQAgAHIAZQBjAGUAcABjAGkAXAB1ADIANAAzAFwAJwBmADMAbgAgAGQAZQAgAGwAYQAgAG0AZQByAGMAYQBkAGUAcgBcAHUAMgAzADcAXAAnAGUAZABhACAAcQB1AGUAIABzAGUAIABlAG4AdgBcAHUAMgAzADcAXAAnAGUAZABhACAAeQAgAHEAdQBlACAAcwBlACAAbQBlAG4AYwBpAG8AbgBhACAAZQBuACAAbABhACAAcAByAGUAcwBlAG4AdABlACAAZgBhAGMAdAB1AHIAYQAsACAAcwBpAGcAbgBpAGYAaQBjAGEAIABwAGwAZQBuAGEAIAB5ACAAdABvAHQAYQBsACAAYQBjAGUAcAB0AGEAYwBpAFwAdQAyADQAMwBcACcAZgAzAG4AIABkAGUAIABsAGEAcwAgAGMAbwBuAGQAaQBjAGkAbwBuAGUAcwAgAGcAZQBuAGUAcgBhAGwAZQBzACAAZABlACAAdgBlAG4AdABhACAAZABlACAAUwBFAFcAIABFAFUAUgBPAEQAUgBJAFYARQAgAEEAUgBHAEUATgBUAEkATgBBACAAUwAuAEEALgAsACAAcQB1AGUAIABmAGkAZwB1AHIAYQBuACAAYQBsACAAZABvAHIAcwBvAC4AfQBcAHAAYQByAH0ADQAKAH0ADQAKAA==</value>
+  </data>
+  <metadata name="xrPanel2.Name" xml:space="preserve">
+    <value>xrPanel2</value>
+  </metadata>
+  <metadata name="xrLabel7.Name" xml:space="preserve">
+    <value>xrLabel7</value>
+  </metadata>
+  <metadata name="xrLabel9.Name" xml:space="preserve">
+    <value>xrLabel9</value>
+  </metadata>
+  <metadata name="xrLabel4.Name" xml:space="preserve">
+    <value>xrLabel4</value>
+  </metadata>
+  <metadata name="txtImporteIIBBMonedaFacturacion.Name" xml:space="preserve">
+    <value>txtImporteIIBBMonedaFacturacion</value>
+  </metadata>
+  <metadata name="txtIVATotal.Name" xml:space="preserve">
+    <value>txtIVATotal</value>
+  </metadata>
+  <metadata name="txtAlicuotaIVA.Name" xml:space="preserve">
+    <value>txtAlicuotaIVA</value>
+  </metadata>
+  <metadata name="txtMoneda.Name" xml:space="preserve">
+    <value>txtMoneda</value>
+  </metadata>
+  <metadata name="txtTotal.Name" xml:space="preserve">
+    <value>txtTotal</value>
+  </metadata>
+  <metadata name="txtSubTotal.Name" xml:space="preserve">
+    <value>txtSubTotal</value>
+  </metadata>
+  <metadata name="txtSon.Name" xml:space="preserve">
+    <value>txtSon</value>
+  </metadata>
+  <metadata name="txtRefInterna.Name" xml:space="preserve">
+    <value>txtRefInterna</value>
+  </metadata>
+  <metadata name="txtRefCliente.Name" xml:space="preserve">
+    <value>txtRefCliente</value>
+  </metadata>
+  <metadata name="xrLabel6.Name" xml:space="preserve">
+    <value>xrLabel6</value>
+  </metadata>
+  <metadata name="xrLabel5.Name" xml:space="preserve">
+    <value>xrLabel5</value>
+  </metadata>
+  <metadata name="label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </metadata>
+  <metadata name="label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </metadata>
+  <metadata name="label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </metadata>
+  <metadata name="GroupFooter2.Name" xml:space="preserve">
+    <value>GroupFooter2</value>
+  </metadata>
+  <metadata name="PageHeader.Name" xml:space="preserve">
+    <value>PageHeader</value>
+  </metadata>
+  <metadata name="$this.Name" xml:space="preserve">
+    <value>SewFactura</value>
+  </metadata>
+</root>

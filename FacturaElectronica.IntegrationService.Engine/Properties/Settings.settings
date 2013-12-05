@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FacturaElectronica.Service.Engine.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FacturaElectronica_Service_Engine_FEPrint_FEPrintService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:1841/FEPrint.asmx</Value>
+    </Setting>
+    <Setting Name="FacturaElectronica_Service_Engine_FEWS_FEServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:1814/FEServices.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

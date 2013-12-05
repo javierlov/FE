@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FacturaElectronica.WebServices.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FacturaElectronica_WebServices_wsaa_LoginCMSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://wsaahomo.afip.gov.ar/ws/services/LoginCms</Value>
+    </Setting>
+    <Setting Name="FacturaElectronica_WebServices_wsbfe_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://wswhomo.afip.gov.ar/wsbfe/service.asmx</Value>
+    </Setting>
+    <Setting Name="FacturaElectronica_WebServices_wsfe_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://wswhomo.afip.gov.ar/wsfev1/service.asmx</Value>
+    </Setting>
+    <Setting Name="FacturaElectronica_WebServices_wsfex_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://wswhomo.afip.gov.ar/wsfex/service.asmx</Value>
+    </Setting>
+    <Setting Name="EmpresaID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,159 @@
+.bluetabs{
+border-bottom: 0px solid gray;
+}
+
+.bluetabs ul{
+padding: 3px 0;
+margin-left: 0;
+margin-top: 1px;
+margin-bottom: 0;
+font: bold 12px Tahoma;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+
+.bluetabs li{
+display: inline;
+margin: 0;
+}
+
+.bluetabs li a{
+text-decoration: none;
+padding: 3px 7px;
+margin-right: 3px;
+border: 0px solid #778;
+color: #2d2b2b;
+background: red; /*THEME CHANGE HERE*/
+}
+
+.bluetabs li a:hover{
+color:white;
+background: #D51635;
+}
+
+.bluetabs li.selected
+{
+	color:white;
+	background: #D51635;
+}
+
+.bluetabs li.selected a{ /*selected main tab style */
+color:white;
+background: #D51635;
+border-bottom-color: white;
+}
+
+.bluetabs li.selected a:hover{ /*selected main tab style */
+color:white;
+text-decoration: none;
+}
+
+/* ######### Style for Drop Down Menu ######### */
+
+.dropmenudiv_b{
+position:absolute;
+top: 0;
+border: 1px solid #918d8d; /*THEME CHANGE HERE*/
+border-width: 0 1px;
+font:normal 12px Tahoma;
+line-height:18px;
+z-index:100;
+background-color: white;
+width: 200px;
+visibility: hidden;
+}
+
+
+.dropmenudiv_b a{
+width: auto;
+display: block;
+text-indent: 5px;
+border: 0 solid #918d8d; /*THEME CHANGE HERE*/
+border-bottom-width: 1px;
+padding: 2px 0;
+text-decoration: none;
+color: black;
+}
+
+* html .dropmenudiv_b a{ /*IE only hack*/
+width: 100%;
+}
+
+.dropmenudiv_b a:hover{ /*THEME CHANGE HERE*/
+color: white;
+background-color: #D51635;
+}
+
+#headerbox {
+ height:65px;
+ background-color:#2C353C;
+}
+
+#logo {
+  margin-top: 10px;
+  margin-left: 8px;
+  vertical-align:middle;
+  height: 50px;
+  width: 103px;
+}
+
+#gears {
+  height:66px;
+  width: 215px;
+}
+
+#beta_text 
+{
+  vertical-align: text-top;
+  text-align: left;
+  font-family: Arial;
+  font-size: 14px;
+  color: red; 
+}
+
+.align_left_view {
+  text-align:left;
+  height: 65px;
+}
+
+.header_leftvbox {
+  padding: 0px;
+  width: 118px;
+  height: 65px;
+  float: left;
+}
+
+.header_middlevbox {
+  border-left: 3px solid white;
+  margin-top: 10px;
+  width: 400px;
+  height: 50px;
+  float: left;
+}
+
+.header_middlevbox_center {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+  width: 350px;
+  height: 30px;
+  float: left;
+  text-align: left;
+  font-family: Arial;
+  font-size: 20px;
+  color: white;
+}
+
+.header_rightvbox {
+  margin-bottom: 10px;
+  width: 220px;
+  height: 65px;
+  float: right;
+  text-align: right;
+}
+
+
+/* Holly Hack for IE \*/
+* html .horizontalcssmenu ul li { float: left; height: 1%; }
+* html .horizontalcssmenu ul li a { height: 1%; }
+/* End */

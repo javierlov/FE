@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RespuestaLoteComprobantes>
+	<BatchUniqueId>59</BatchUniqueId>
+	<CUITInformante>20131507969</CUITInformante>
+	<FechaCAE>20080527</FechaCAE>
+	<CantidadComprobantes>1</CantidadComprobantes>
+	<Resultado>A</Resultado>
+	<Motivo>00</Motivo>
+	<MotivoDescripcion></MotivoDescripcion>
+	<Reproceso>N</Reproceso>
+	<SonServicios>0</SonServicios>
+	<Comprobante>
+		<CodigoDocumentoComprador>80</CodigoDocumentoComprador>
+		<NroDocumentoComprador>23111111113</NroDocumentoComprador>
+		<TipoComprobante>1</TipoComprobante>
+		<PuntoVenta>1</PuntoVenta>
+		<LetraComprobante>A</LetraComprobante>
+		<NroComprobanteDesde>59</NroComprobanteDesde>
+		<NroComprobanteHasta>59</NroComprobanteHasta>
+		<Importe>121</Importe>
+		<ImporteNoGravado>0</ImporteNoGravado>
+		<ImporteGravado>100</ImporteGravado>
+		<ImporteImpuestoLiquidado>21</ImporteImpuestoLiquidado>
+		<ImporteRNI_Percepcion>0</ImporteRNI_Percepcion>
+		<ImporteExento>0</ImporteExento>
+		<Resultado>A</Resultado>
+		<CAE>58229243630604</CAE>
+		<FechaComprobante>20080527</FechaComprobante>
+		<FechaVencimiento>20080606</FechaVencimiento>
+		<Motivo>00</Motivo>
+		<MotivoDescripcion></MotivoDescripcion>
+		<FechaDesdeServicioFacturado>NULL</FechaDesdeServicioFacturado>
+		<FechaHastaServicioFacturado>NULL</FechaHastaServicioFacturado>
+		<FechaVencimientoPago>20080527</FechaVencimientoPago>
+		<UltimoIDUsado></UltimoIDUsado>
+		<UltimoNroComprobanteUsado></UltimoNroComprobanteUsado>
+		<NroInternoERP></NroInternoERP>
+		<SQLID></SQLID>
+	</Comprobante>
+	<Error>
+		<CodigoError>0</CodigoError>
+		<MensajeError></MensajeError>
+	</Error>
+</RespuestaLoteComprobantes>
+

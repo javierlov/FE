@@ -1,0 +1,8 @@
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Service.Engine\bin\Debug\FacturaElectronica.Service.Engine.dll.config
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Service.Engine\bin\Debug\FacturaElectronica.Service.Engine.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Service.Engine\bin\Debug\FacturaElectronica.Service.Engine.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Service.Engine\bin\Debug\FacturaElectronica.Utils.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Service.Engine\bin\Debug\FacturaElectronica.Utils.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Service.Engine\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Service.Engine\obj\Debug\FacturaElectronica.Service.Engine.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Service.Engine\obj\Debug\FacturaElectronica.Service.Engine.pdb

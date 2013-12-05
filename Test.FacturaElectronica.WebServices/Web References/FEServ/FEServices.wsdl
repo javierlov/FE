@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://accendo.com.ar/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://accendo.com.ar/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://accendo.com.ar/">
+      <s:element name="TestProcesarLoteFacturas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpresaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoServicio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PathXmlDocumentBatch" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestProcesarLoteFacturasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestProcesarLoteFacturasResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasBienesServiciosObj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpresaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="documentBatch" type="tns:RequestBatch" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RequestBatch">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BatchUniqueId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SonServicios" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Periodo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CantidadComprobantes" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CUITInformante" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalComprobanteB" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalNoGravado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalGravado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalImpuestoLiquidado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalRNI_Percepcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalExento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalPercepciones_PagosCuentaImpuestosNacionales" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalPercepcionIIBB" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalPercepcionImpuestosMunicipales" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalImpuestosInternos" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalMonedaFacturacionComprobanteB" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalNoGravadoMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalGravadoMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalImpuestoLiquidadoMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalRNI_PercepcionMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalExentoMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalPercepciones_PagosCuentaImpuestosNacionalesMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalPercepcionIIBBMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalPercepcionImpuestosMunicipalesMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalImpuestosInternosMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestHeaders" type="tns:ArrayOfRequestHeader" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRequestHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RequestHeader" nillable="true" type="tns:RequestHeader" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RequestHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SQLID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmpresaID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TipoTransaccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaComprobante" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaDesdeServicioFacturado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaHastaServicioFacturado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TipoComprobante" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NroComprobanteDesde" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NroComprobanteHasta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaVencimientoPago" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Importe" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteComprobanteB" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteNoGravado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteGravado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteImpuestoLiquidado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteRNI_Percepcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteExento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImportePercepciones_PagosCuentaImpuestosNacionales" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImportePercepcionIIBB" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImportePercepcionImpuestosMunicipales" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteImpuestosInternos" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CantidadAlicuotasIVA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoOperacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LetraComprobante" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NroInternoERP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CondicionPago" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OficinaVentas" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PuntoVenta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmisorRazonSocial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmisorDireccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmisorCalle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmisorCP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmisorLocalidad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmisorProvincia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmisorPais" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmisorTelefonos" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmisorEMail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorCodigoDocumento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorNroDocumento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorRazonSocial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorTipoResponsable" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorTipoResponsableDescripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorDireccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorLocalidad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorProvincia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorPais" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorCodigoPostal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorNroIIBB" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorCodigoCliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorNroReferencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompradorEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NroRemito" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AlicuotaIVA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TasaIIBB" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoJurisdiccionIIBB" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JurisdiccionImpuestosMunicipales" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteMonedaFacturacionComprobanteB" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteNoGravadoMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteGravadoMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteImpuestoLiquidadoMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteRNI_PercepcionMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteExentoMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImportePercepciones_PagosCuentaImpuestosNacionalesMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImportePercepcionIIBBMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImportePercepcionImpuestosMunicipalesMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteImpuestosInternosMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteEscrito" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TasaCambio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoMoneda" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CantidadRegistrosDetalle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoMecanismoDistribucion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TipoExportacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PermisoExistente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FormaPagoDescripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IncoTerms" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Idioma" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Observaciones1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Observaciones2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Observaciones3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RapiPago" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ObservacionRapiPago" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PagoFacil" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OPER" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NOPER" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DAGRUF" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FACTORI" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FACTORI_FORMATEADO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="USUARIO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FECPG1_FORMATEADO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FECPG2_FORMATEADO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CUOTAIVA105" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CUOTAIVA21" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestLines" type="tns:ArrayOfRequestLine" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestAlicuotas" type="tns:ArrayOfRequestAlicuota" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestTributos" type="tns:ArrayOfRequestTributo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRequestLine">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RequestLine" nillable="true" type="tns:RequestLine" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RequestLine">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SQLID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoProductoEmpresa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoProductoNCM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoProductoSecretaria" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cantidad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UnidadMedida" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImportePrecioUnitario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteBonificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteAjuste" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteSubtotal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImportePrecioUnitarioMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteBonificacionMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteAjusteMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteSubtotalMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteSubtotalMonedaFacturacionConIVA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AlicuotaIVA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IndicadorExentoGravadoNoGravado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Observaciones" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MesPrestacion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRequestAlicuota">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RequestAlicuota" nillable="true" type="tns:RequestAlicuota" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RequestAlicuota">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ImpuestoID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CbteID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tipo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BaseImp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Importe" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Codigo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRequestTributo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RequestTributo" nillable="true" type="tns:RequestTributo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RequestTributo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ImpuestoID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CbteID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tipo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BaseImp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Importe" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteMonedaFacturacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Codigo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ProcesarLoteFacturasBienesServiciosObjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcesarLoteFacturasBienesServiciosObjResult" type="tns:ResponseBatch" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ResponseBatch">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BatchUniqueId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CUITInformante" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaCAE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CantidadComprobantes" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Resultado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Motivo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MotivoDescripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reproceso" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SonServicios" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoError" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MensajeError" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseHeaders" type="tns:ArrayOfResponseHeader" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfResponseHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ResponseHeader" nillable="true" type="tns:ResponseHeader" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResponseHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SQLID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TipoTransaccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Comprobante" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoDocumentoComprador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NroDocumentoComprador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TipoComprobante" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PuntoVenta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LetraComprobante" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NroComprobanteDesde" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NroComprobanteHasta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Importe" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteNoGravado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteGravado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteImpuestoLiquidado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteRNI_Percepcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImporteExento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Resultado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CAE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaComprobante" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaVencimiento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Motivo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MotivoDescripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaDesdeServicioFacturado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaHastaServicioFacturado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaVencimientoPago" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UltimoIDUsado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UltimoNroComprobanteUsado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NroInternoERP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Observaciones" type="tns:ArrayOfResponseHeaderObs" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfResponseHeaderObs">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ResponseHeaderObs" nillable="true" type="tns:ResponseHeaderObs" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResponseHeaderObs">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Codigo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ProcesarLoteFacturasExportacionObj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpresaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="documentBatch" type="tns:RequestBatch" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasExportacionObjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcesarLoteFacturasExportacionObjResult" type="tns:ResponseBatch" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasBienesServicios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpresaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlDocument" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasBienesServiciosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcesarLoteFacturasBienesServiciosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasExportacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpresaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlDocument" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasExportacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcesarLoteFacturasExportacionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasBienesCapital">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpresaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlDocument" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasBienesCapitalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcesarLoteFacturasBienesCapitalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReprocesarLoteFacturasBienesServicios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpresaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="documentBatch" type="tns:RequestBatch" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReprocesarLoteFacturasBienesServiciosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReprocesarLoteFacturasBienesServiciosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReprocesarLoteFacturasExportacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpresaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="documentBatch" type="tns:RequestBatch" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReprocesarLoteFacturasExportacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReprocesarLoteFacturasExportacionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReprocesarLoteFacturasBienesCapital">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpresaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="documentBatch" type="tns:RequestBatch" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReprocesarLoteFacturasBienesCapitalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReprocesarLoteFacturasBienesCapitalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TestProcesarLoteFacturasSoapIn">
+    <wsdl:part name="parameters" element="tns:TestProcesarLoteFacturas" />
+  </wsdl:message>
+  <wsdl:message name="TestProcesarLoteFacturasSoapOut">
+    <wsdl:part name="parameters" element="tns:TestProcesarLoteFacturasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasBienesServiciosObjSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasBienesServiciosObj" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasBienesServiciosObjSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasBienesServiciosObjResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasExportacionObjSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasExportacionObj" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasExportacionObjSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasExportacionObjResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasBienesServiciosSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasBienesServicios" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasBienesServiciosSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasBienesServiciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasExportacionSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasExportacion" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasExportacionSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasExportacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasBienesCapitalSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasBienesCapital" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasBienesCapitalSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasBienesCapitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReprocesarLoteFacturasBienesServiciosSoapIn">
+    <wsdl:part name="parameters" element="tns:ReprocesarLoteFacturasBienesServicios" />
+  </wsdl:message>
+  <wsdl:message name="ReprocesarLoteFacturasBienesServiciosSoapOut">
+    <wsdl:part name="parameters" element="tns:ReprocesarLoteFacturasBienesServiciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReprocesarLoteFacturasExportacionSoapIn">
+    <wsdl:part name="parameters" element="tns:ReprocesarLoteFacturasExportacion" />
+  </wsdl:message>
+  <wsdl:message name="ReprocesarLoteFacturasExportacionSoapOut">
+    <wsdl:part name="parameters" element="tns:ReprocesarLoteFacturasExportacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReprocesarLoteFacturasBienesCapitalSoapIn">
+    <wsdl:part name="parameters" element="tns:ReprocesarLoteFacturasBienesCapital" />
+  </wsdl:message>
+  <wsdl:message name="ReprocesarLoteFacturasBienesCapitalSoapOut">
+    <wsdl:part name="parameters" element="tns:ReprocesarLoteFacturasBienesCapitalResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FEServicesSoap">
+    <wsdl:operation name="TestProcesarLoteFacturas">
+      <wsdl:input message="tns:TestProcesarLoteFacturasSoapIn" />
+      <wsdl:output message="tns:TestProcesarLoteFacturasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesServiciosObj">
+      <wsdl:input message="tns:ProcesarLoteFacturasBienesServiciosObjSoapIn" />
+      <wsdl:output message="tns:ProcesarLoteFacturasBienesServiciosObjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasExportacionObj">
+      <wsdl:input message="tns:ProcesarLoteFacturasExportacionObjSoapIn" />
+      <wsdl:output message="tns:ProcesarLoteFacturasExportacionObjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesServicios">
+      <wsdl:input message="tns:ProcesarLoteFacturasBienesServiciosSoapIn" />
+      <wsdl:output message="tns:ProcesarLoteFacturasBienesServiciosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasExportacion">
+      <wsdl:input message="tns:ProcesarLoteFacturasExportacionSoapIn" />
+      <wsdl:output message="tns:ProcesarLoteFacturasExportacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesCapital">
+      <wsdl:input message="tns:ProcesarLoteFacturasBienesCapitalSoapIn" />
+      <wsdl:output message="tns:ProcesarLoteFacturasBienesCapitalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReprocesarLoteFacturasBienesServicios">
+      <wsdl:input message="tns:ReprocesarLoteFacturasBienesServiciosSoapIn" />
+      <wsdl:output message="tns:ReprocesarLoteFacturasBienesServiciosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReprocesarLoteFacturasExportacion">
+      <wsdl:input message="tns:ReprocesarLoteFacturasExportacionSoapIn" />
+      <wsdl:output message="tns:ReprocesarLoteFacturasExportacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReprocesarLoteFacturasBienesCapital">
+      <wsdl:input message="tns:ReprocesarLoteFacturasBienesCapitalSoapIn" />
+      <wsdl:output message="tns:ReprocesarLoteFacturasBienesCapitalSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FEServicesSoap" type="tns:FEServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestProcesarLoteFacturas">
+      <soap:operation soapAction="http://accendo.com.ar/TestProcesarLoteFacturas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesServiciosObj">
+      <soap:operation soapAction="http://accendo.com.ar/ProcesarLoteFacturasBienesServiciosObj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasExportacionObj">
+      <soap:operation soapAction="http://accendo.com.ar/ProcesarLoteFacturasExportacionObj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesServicios">
+      <soap:operation soapAction="http://accendo.com.ar/ProcesarLoteFacturasBienesServicios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasExportacion">
+      <soap:operation soapAction="http://accendo.com.ar/ProcesarLoteFacturasExportacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesCapital">
+      <soap:operation soapAction="http://accendo.com.ar/ProcesarLoteFacturasBienesCapital" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReprocesarLoteFacturasBienesServicios">
+      <soap:operation soapAction="http://accendo.com.ar/ReprocesarLoteFacturasBienesServicios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReprocesarLoteFacturasExportacion">
+      <soap:operation soapAction="http://accendo.com.ar/ReprocesarLoteFacturasExportacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReprocesarLoteFacturasBienesCapital">
+      <soap:operation soapAction="http://accendo.com.ar/ReprocesarLoteFacturasBienesCapital" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FEServicesSoap12" type="tns:FEServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestProcesarLoteFacturas">
+      <soap12:operation soapAction="http://accendo.com.ar/TestProcesarLoteFacturas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesServiciosObj">
+      <soap12:operation soapAction="http://accendo.com.ar/ProcesarLoteFacturasBienesServiciosObj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasExportacionObj">
+      <soap12:operation soapAction="http://accendo.com.ar/ProcesarLoteFacturasExportacionObj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesServicios">
+      <soap12:operation soapAction="http://accendo.com.ar/ProcesarLoteFacturasBienesServicios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasExportacion">
+      <soap12:operation soapAction="http://accendo.com.ar/ProcesarLoteFacturasExportacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesCapital">
+      <soap12:operation soapAction="http://accendo.com.ar/ProcesarLoteFacturasBienesCapital" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReprocesarLoteFacturasBienesServicios">
+      <soap12:operation soapAction="http://accendo.com.ar/ReprocesarLoteFacturasBienesServicios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReprocesarLoteFacturasExportacion">
+      <soap12:operation soapAction="http://accendo.com.ar/ReprocesarLoteFacturasExportacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReprocesarLoteFacturasBienesCapital">
+      <soap12:operation soapAction="http://accendo.com.ar/ReprocesarLoteFacturasBienesCapital" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FEServices">
+    <wsdl:port name="FEServicesSoap" binding="tns:FEServicesSoap">
+      <soap:address location="http://localhost:1814/FEServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FEServicesSoap12" binding="tns:FEServicesSoap12">
+      <soap12:address location="http://localhost:1814/FEServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

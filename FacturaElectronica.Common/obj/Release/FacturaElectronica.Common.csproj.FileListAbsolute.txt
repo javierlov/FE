@@ -1,0 +1,15 @@
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Common\bin\Release\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Common\bin\Release\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Common\obj\Release\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Common\obj\Release\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Common\obj\Release\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.Common\bin\Release\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.Common\bin\Release\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.Common\obj\Release\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.Common\obj\Release\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.Common\obj\Release\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.Common\bin\Release\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.Common\bin\Release\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.Common\obj\Release\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.Common\obj\Release\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.Common\obj\Release\FacturaElectronica.Common.pdb

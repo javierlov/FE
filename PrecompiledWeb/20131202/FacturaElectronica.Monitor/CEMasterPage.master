@@ -1,0 +1,56 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="FacturaElectronica.CEMasterPage, App_Web_cmm1snut" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Monitor de facturas electronicas</title>
+    <script type="text/javascript" src="App_Themes/dropdowntabs.js"></script>  
+    <link rel="stylesheet" type="text/css" href="App_Themes/bluetabs.css" />  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin:0;background-image:url('Images/main_bg.jpg')">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" 
+        style="background-color:blue">
+        <tr>
+            <td width="1px" style="background-color:#000000">
+                <img src="images/spacer.gif" width="1" height="1" />
+            </td>
+            <td width="100%" style="background-color:#B6C7DA">
+                <form id="form1" runat="server">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+                    <tr id="headerbox"> 
+                      <td > 
+                        <div class="align_left_view">
+                          <div class="header_leftvbox"><asp:Image ID="imgLogo" runat="server" 
+                                  ImageAlign="AbsMiddle" /></div>
+                          <div class="header_middlevbox">
+                           <div class="header_middlevbox_center">Monitor</div>
+                          </div>
+                          <div class="header_rightvbox"></div>
+                        </div>                                                          
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td style="background:blue ;border-top: 2px solid #ffffff;">
+                       <div id="bluemenu" class="bluetabs">
+                        <ul>
+                            <li><a href="ActivityReg.aspx">Comprobantes Procesados</a></li>
+                            <li><a href="GeneralErrors.aspx">Errores Generales</a></li>
+                            <li><a href="AdvanceSearch.aspx">Busqueda Avanzada</a></li>
+                        </ul>
+                        </div>
+                      </td>
+                    </tr>                                 
+                </table>                
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">             
+                </asp:ContentPlaceHolder>
+                </form>
+            </td>
+            <td width="1" style="background-color:#000000">
+                <img src="images/spacer.gif" width="1" height="1" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

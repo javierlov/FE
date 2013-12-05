@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CEMasterPage.master.cs" Inherits="Accendo.ComprobanteElectronico.CEMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Factura Electronica - Configuracion</title>
+    <script type="text/javascript" src="App_Themes/dropdowntabs.js"></script>  
+    <link rel="stylesheet" type="text/css" href="App_Themes/bluetabs.css" />  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin:0;background-image:url('Images/main_bg.jpg')">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" 
+        style="background-color:blue">
+        <tr>
+            <td width="1px" style="background-color:#000000">
+                <img src="images/spacer.gif" width="1" height="1" />
+            </td>
+            <td width="100%" style="background-color:#B6C7DA">
+                <form id="form1" runat="server">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+                    <tr id="headerbox"> 
+                      <td > 
+                        <div class="align_left_view">
+                          <div class="header_leftvbox"><img src="images/fe_logo.gif" id="logo" /></div>
+                          <div class="header_middlevbox">
+                           <div class="header_middlevbox_center">Configuración</div>
+                          </div>
+                          <div class="header_rightvbox"></div>
+                        </div>                                                          
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td style="background:blue ;border-top: 2px solid #ffffff;">
+                      
+                        <div id="bluemenu" class="bluetabs">
+                        <ul>
+                            <li><a href="default.aspx" title="Inicio"><span>Inicio</span></a></li>
+                            <li><a href="#" title="AFIP" rel="dropmenu1_b"><span>AFIP</span></a></li>
+                            <li><a href="#" title="Equivalencias" rel="dropmenu2_b"><span>Equivalencias</span></a></li>
+                            <li><a href="#" title="Equivalencias" rel="dropmenu3_b"><span>Tablas Adicionales</span></a></li>
+                            <li><a href="settings.aspx" title="Configuracion"><span>Configuracion</span></a></li>
+                        </ul>                        
+                        </div>   
+                        
+                        <div id="dropmenu1_b" class="dropmenudiv_b"> 
+                            <a href="afipabm.aspx?db=AFIPCodigoNCM">Codigo NCM</a>
+                            <a href="afipabm.aspx?db=AFIPIncoterms">Incoterms</a>
+                            <!--<a href="afipabm.aspx?db=AFIPJurisdiccionIIBB">Jurisdiccion IIBB</a>-->
+                            <a href="afipabm.aspx?db=AFIPMoneda">Moneda</a>
+                            <!--<a href="afipabm.aspx?db=AFIPOperacion">Operacion</a>-->
+                            <a href="afipabm.aspx?db=AFIPPais">Pais</a>
+                            <a href="afipabm.aspx?db=AFIPTasaIVA">Tasa IVA</a>
+                            <a href="afipabm.aspx?db=AFIPTipoComprobante">Tipo Comprobante</a>
+                            <a href="afipabm.aspx?db=AFIPTipoDocumento">Tipo Documento</a>
+                            <a href="afipabm.aspx?db=AFIPTipoResponsable">Tipo Responsable</a>
+                            <!--<a href="afipabm.aspx?db=AFIPUnidadMedida">Unidad Medida</a>-->
+                            <a href="afipabm.aspx?db=AFIPZona">Zona</a>
+                        </div>
+                        
+                        <div id="dropmenu2_b" class="dropmenudiv_b"> 
+                            <a href="afipabm.aspx?db=EquivAFIPIncoterms">Incoterms</a>
+                            <!--<a href="afipabm.aspx?db=EquivAFIPJurisdiccionIIBB">Jurisdiccion IIBB</a>-->
+                            <a href="afipabm.aspx?db=EquivAFIPMoneda">Moneda</a>
+                            <!--<a href="afipabm.aspx?db=EquivAFIPOperacion">Operacion</a>-->
+                            <a href="afipabm.aspx?db=EquivAFIPPais">Pais</a>
+                            <a href="afipabm.aspx?db=EquivAFIPTasaIVA">Tasa IVA</a>
+                            <a href="afipabm.aspx?db=EquivAFIPTipoComprobante">Tipo Comprobante</a>
+                            <a href="afipabm.aspx?db=EquivAFIPTipoResponsable">Tipo Responsable</a>
+                            <a href="afipabm.aspx?db=EquivAFIPImpuesto">Impuesto</a>
+                            <a href="afipabm.aspx?db=EquivAFIPTasaIVA">Tasa IVA</a>
+                            <a href="afipabm.aspx?db=EquivAFIPCodigoDocumento">Codigo Documento</a>
+                            <a href="afipabm.aspx?db=EquivAFIPUnidadMedida">Unidad Medida</a>
+                            <!--<a href="afipabm.aspx?db=EquivAFIPUnidadMedida">Unidad Medida</a>-->
+                        </div>
+                        
+                        <div id="dropmenu3_b" class="dropmenudiv_b"> 
+                            <!--<a href="afipabm.aspx?db=Empresas">Empresas</a>-->
+                            <a href="afipabm.aspx?db=PuntoVenta">Puntos de Venta</a>
+                        </div>
+                         
+                        <script type="text/javascript">
+                        tabdropdown.init("bluemenu")
+                        </script>
+
+                      </td>
+                    </tr>                                 
+                </table>                
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">             
+                </asp:ContentPlaceHolder>
+                </form>
+            </td>
+            <td width="1" style="background-color:#000000">
+                <img src="images/spacer.gif" width="1" height="1" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

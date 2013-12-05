@@ -1,0 +1,23 @@
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.Service\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.Service\obj\Debug\FacturaElectronica.Service.Form1.resources
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.Service\obj\Debug\Test.FacturaElectronica.Service.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.Service\obj\Debug\Test.FacturaElectronica.Service.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.Service\bin\Debug\Test.FacturaElectronica.Service.exe
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.Service\bin\Debug\Test.FacturaElectronica.Service.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.Service\bin\Debug\FacturaElectronica.Engine.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.Service\bin\Debug\FacturaElectronica.Engine.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.Service\obj\Debug\Test.FacturaElectronica.Service.exe
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.Service\obj\Debug\Test.FacturaElectronica.Service.pdb
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.Service\bin\Debug\Test.FacturaElectronica.Service.exe.config
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.Service\bin\Debug\Test.FacturaElectronica.Service.exe
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.Service\bin\Debug\Test.FacturaElectronica.Service.pdb
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.Service\bin\Debug\FacturaElectronica.Service.Engine.dll
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.Service\bin\Debug\FacturaElectronica.Utils.dll
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.Service\bin\Debug\FacturaElectronica.Service.Engine.pdb
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.Service\bin\Debug\FacturaElectronica.Utils.pdb
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.Service\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.Service\obj\Debug\FacturaElectronica.Service.Form1.resources
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.Service\obj\Debug\Test.FacturaElectronica.Service.Properties.Resources.resources
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.Service\obj\Debug\Test.FacturaElectronica.Service.csproj.GenerateResource.Cache
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.Service\obj\Debug\Test.FacturaElectronica.Service.exe
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.Service\obj\Debug\Test.FacturaElectronica.Service.pdb

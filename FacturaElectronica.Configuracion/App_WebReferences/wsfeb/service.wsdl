@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ar.gov.afip.dif.bfe/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://ar.gov.afip.dif.bfe/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web Service orientado  al  servicio  de Bonos Fiscales electronicos</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ar.gov.afip.dif.bfe/">
+      <s:element name="BFEAuthorize">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsBFEAuthRequest" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cmp" type="tns:ClsBFERequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClsBFEAuthRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sign" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cuit" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFERequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tipo_doc" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="Nro_doc" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Zona" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tipo_cbte" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="Punto_vta" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_nro" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_total" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_tot_conc" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_neto" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Impto_liq" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Impto_liq_rni" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_op_ex" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_perc" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_iibb" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_perc_mun" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_internos" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Imp_moneda_Id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_moneda_ctz" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fecha_cbte" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Item" nillable="true" type="tns:Item" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Item">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Pro_codigo_ncm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pro_codigo_sec" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pro_ds" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Pro_qty" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Pro_umed" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Pro_precio_uni" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_bonif" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_total" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Iva_id" type="s:short" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEAuthorizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BFEAuthorizeResult" type="tns:BFEResponseAuthorize" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BFEResponseAuthorize">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BFEResultAuth" type="tns:ClsBFEOutAuthorize" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEErr" type="tns:ClsBFEErr" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEEvents" type="tns:ClsBFEEvents" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFEOutAuthorize">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cuit" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cae" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fch_venc_Cae" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fch_cbte" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Resultado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reproceso" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Obs" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFEErr">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ErrCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFEEvents">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="EventCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="EventMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEGetCMP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsBFEAuthRequest" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cmp" type="tns:ClsBFEGetCMP" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClsBFEGetCMP">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Tipo_cbte" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="Punto_vta" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_nro" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEGetCMPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BFEGetCMPResult" type="tns:BFEGetCMPResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BFEGetCMPResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BFEResultGet" type="tns:ClsBFEGetCMPR" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEErr" type="tns:ClsBFEErr" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEEvents" type="tns:ClsBFEEvents" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFEGetCMPR">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cuit" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tipo_doc" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="Nro_doc" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tipo_cbte" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="Punto_vta" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_nro" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_total" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_tot_conc" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_neto" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Impto_liq" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Impto_liq_rni" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_op_ex" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_perc" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_iibb" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_perc_mun" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_internos" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Imp_moneda_Id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Imp_moneda_ctz" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fecha_cbte_orig" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fecha_cbte_cae" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fch_venc_Cae" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cae" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Resultado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Obs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEGetPARAM_Tipo_doc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auth" type="tns:ClsBFEAuthRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BFEGetPARAM_Tipo_docResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BFEGetPARAM_Tipo_docResult" type="tns:BFEResponse_Tipo_doc" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BFEResponse_Tipo_doc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BFEResultGet" type="tns:ArrayOfClsBFEResponse_Tipo_doc" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEErr" type="tns:ClsBFEErr" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEEvents" type="tns:ClsBFEEvents" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsBFEResponse_Tipo_doc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsBFEResponse_Tipo_doc" nillable="true" type="tns:ClsBFEResponse_Tipo_doc" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFEResponse_Tipo_doc">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Doc_Id" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="Doc_Ds" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Doc_vig_desde" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Doc_vig_hasta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEGetPARAM_Tipo_IVA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auth" type="tns:ClsBFEAuthRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BFEGetPARAM_Tipo_IVAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BFEGetPARAM_Tipo_IVAResult" type="tns:BFEResponse_Tipo_IVA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BFEResponse_Tipo_IVA">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BFEResultGet" type="tns:ArrayOfClsBFEResponse_Tipo_IVA" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEErr" type="tns:ClsBFEErr" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEEvents" type="tns:ClsBFEEvents" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsBFEResponse_Tipo_IVA">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsBFEResponse_Tipo_IVA" nillable="true" type="tns:ClsBFEResponse_Tipo_IVA" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFEResponse_Tipo_IVA">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IVA_Id" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="IVA_Ds" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IVA_vig_desde" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IVA_vig_hasta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEGetPARAM_Zonas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auth" type="tns:ClsBFEAuthRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BFEGetPARAM_ZonasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BFEGetPARAM_ZonasResult" type="tns:BFEResponse_Zon" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BFEResponse_Zon">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BFEResultGet" type="tns:ArrayOfClsBFEResponse_Zon" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEErr" type="tns:ClsBFEErr" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEEvents" type="tns:ClsBFEEvents" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsBFEResponse_Zon">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsBFEResponse_Zon" nillable="true" type="tns:ClsBFEResponse_Zon" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFEResponse_Zon">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Zon_Id" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zon_Ds" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zon_vig_desde" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zon_vig_hasta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEGetPARAM_Tipo_Cbte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auth" type="tns:ClsBFEAuthRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BFEGetPARAM_Tipo_CbteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BFEGetPARAM_Tipo_CbteResult" type="tns:BFEResponse_Tipo_Cbte" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BFEResponse_Tipo_Cbte">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BFEResultGet" type="tns:ArrayOfClsBFEResponse_Tipo_Cbte" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEErr" type="tns:ClsBFEErr" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEEvents" type="tns:ClsBFEEvents" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsBFEResponse_Tipo_Cbte">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsBFEResponse_Tipo_Cbte" nillable="true" type="tns:ClsBFEResponse_Tipo_Cbte" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFEResponse_Tipo_Cbte">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_Id" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cbte_Ds" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cbte_vig_desde" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cbte_vig_hasta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEGetPARAM_UMed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auth" type="tns:ClsBFEAuthRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BFEGetPARAM_UMedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BFEGetPARAM_UMedResult" type="tns:BFEResponse_Umed" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BFEResponse_Umed">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BFEResultGet" type="tns:ArrayOfClsBFEResponse_UMed" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEErr" type="tns:ClsBFEErr" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEEvents" type="tns:ClsBFEEvents" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsBFEResponse_UMed">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsBFEResponse_UMed" nillable="true" type="tns:ClsBFEResponse_UMed" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFEResponse_UMed">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Umed_Id" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="Umed_Ds" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Umed_vig_desde" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Umed_vig_hasta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEGetPARAM_NCM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsBFEAuthRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BFEGetPARAM_NCMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BFEGetPARAM_NCMResult" type="tns:BFEResponse_NCM" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BFEResponse_NCM">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BFEResultGet" type="tns:ArrayOfClsBFEResponse_NCM" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEErr" type="tns:ClsBFEErr" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEEvents" type="tns:ClsBFEEvents" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsBFEResponse_NCM">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsBFEResponse_NCM" nillable="true" type="tns:ClsBFEResponse_NCM" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFEResponse_NCM">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NCM_Codigo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NCM_Ds" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NCM_Nota" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NCM_vig_desde" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NCM_vig_hasta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEGetPARAM_MON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auth" type="tns:ClsBFEAuthRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BFEGetPARAM_MONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BFEGetPARAM_MONResult" type="tns:BFEResponse_Mon" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BFEResponse_Mon">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BFEResultGet" type="tns:ArrayOfClsBFEResponse_Mon" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEErr" type="tns:ClsBFEErr" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEEvents" type="tns:ClsBFEEvents" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsBFEResponse_Mon">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsBFEResponse_Mon" nillable="true" type="tns:ClsBFEResponse_Mon" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFEResponse_Mon">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Mon_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mon_Ds" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mon_vig_desde" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mon_vig_hasta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEGetLast_CMP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsBFE_LastCMP" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClsBFE_LastCMP">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sign" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cuit" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Pto_venta" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tipo_cbte" type="s:short" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEGetLast_CMPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BFEGetLast_CMPResult" type="tns:BFEResponseLast_CMP" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BFEResponseLast_CMP">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BFEResult_LastCMP" type="tns:ClsBFE_LastCMP_Response" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEErr" type="tns:ClsBFEErr" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEEvents" type="tns:ClsBFEEvents" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFE_LastCMP_Response">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Cbte_nro" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cbte_fecha" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEDummy">
+        <s:complexType />
+      </s:element>
+      <s:element name="BFEDummyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BFEDummyResult" type="tns:DummyResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DummyResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AppServer" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DbServer" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AuthServer" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BFEGetLast_ID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Auth" type="tns:ClsBFEAuthRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BFEGetLast_IDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BFEGetLast_IDResult" type="tns:BFEResponse_LastID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BFEResponse_LastID">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BFEResultGet" type="tns:ClsBFEResponse_LastID" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEErr" type="tns:ClsBFEErr" />
+          <s:element minOccurs="0" maxOccurs="1" name="BFEEvents" type="tns:ClsBFEEvents" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsBFEResponse_LastID">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DummyResponse" nillable="true" type="tns:DummyResponse" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BFEAuthorizeSoapIn">
+    <wsdl:part name="parameters" element="tns:BFEAuthorize" />
+  </wsdl:message>
+  <wsdl:message name="BFEAuthorizeSoapOut">
+    <wsdl:part name="parameters" element="tns:BFEAuthorizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetCMPSoapIn">
+    <wsdl:part name="parameters" element="tns:BFEGetCMP" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetCMPSoapOut">
+    <wsdl:part name="parameters" element="tns:BFEGetCMPResponse" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_Tipo_docSoapIn">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_Tipo_doc" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_Tipo_docSoapOut">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_Tipo_docResponse" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_Tipo_IVASoapIn">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_Tipo_IVA" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_Tipo_IVASoapOut">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_Tipo_IVAResponse" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_ZonasSoapIn">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_Zonas" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_ZonasSoapOut">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_ZonasResponse" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_Tipo_CbteSoapIn">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_Tipo_Cbte" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_Tipo_CbteSoapOut">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_Tipo_CbteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_UMedSoapIn">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_UMed" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_UMedSoapOut">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_UMedResponse" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_NCMSoapIn">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_NCM" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_NCMSoapOut">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_NCMResponse" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_MONSoapIn">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_MON" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetPARAM_MONSoapOut">
+    <wsdl:part name="parameters" element="tns:BFEGetPARAM_MONResponse" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetLast_CMPSoapIn">
+    <wsdl:part name="parameters" element="tns:BFEGetLast_CMP" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetLast_CMPSoapOut">
+    <wsdl:part name="parameters" element="tns:BFEGetLast_CMPResponse" />
+  </wsdl:message>
+  <wsdl:message name="BFEDummySoapIn">
+    <wsdl:part name="parameters" element="tns:BFEDummy" />
+  </wsdl:message>
+  <wsdl:message name="BFEDummySoapOut">
+    <wsdl:part name="parameters" element="tns:BFEDummyResponse" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetLast_IDSoapIn">
+    <wsdl:part name="parameters" element="tns:BFEGetLast_ID" />
+  </wsdl:message>
+  <wsdl:message name="BFEGetLast_IDSoapOut">
+    <wsdl:part name="parameters" element="tns:BFEGetLast_IDResponse" />
+  </wsdl:message>
+  <wsdl:message name="BFEDummyHttpGetIn" />
+  <wsdl:message name="BFEDummyHttpGetOut">
+    <wsdl:part name="Body" element="tns:DummyResponse" />
+  </wsdl:message>
+  <wsdl:message name="BFEDummyHttpPostIn" />
+  <wsdl:message name="BFEDummyHttpPostOut">
+    <wsdl:part name="Body" element="tns:DummyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="BFEAuthorize">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Autoriza un comprobante, devolviendo  su CAE correspondiente</wsdl:documentation>
+      <wsdl:input message="tns:BFEAuthorizeSoapIn" />
+      <wsdl:output message="tns:BFEAuthorizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetCMP">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera los datos completos de un comprobante ya autorizado</wsdl:documentation>
+      <wsdl:input message="tns:BFEGetCMPSoapIn" />
+      <wsdl:output message="tns:BFEGetCMPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_Tipo_doc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera el listado de los  tipos de comprobante  y su codigo utilizables en servicio de autorizacion</wsdl:documentation>
+      <wsdl:input message="tns:BFEGetPARAM_Tipo_docSoapIn" />
+      <wsdl:output message="tns:BFEGetPARAM_Tipo_docSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_Tipo_IVA">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera el listado de las alicuotas de IVA  y su codigo utilizables en servicio de autorizacion</wsdl:documentation>
+      <wsdl:input message="tns:BFEGetPARAM_Tipo_IVASoapIn" />
+      <wsdl:output message="tns:BFEGetPARAM_Tipo_IVASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_Zonas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera el listado de las alicuotas de IVA  y su codigo utilizables en servicio de autorizacion</wsdl:documentation>
+      <wsdl:input message="tns:BFEGetPARAM_ZonasSoapIn" />
+      <wsdl:output message="tns:BFEGetPARAM_ZonasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_Tipo_Cbte">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera el listado de los tipos de comprobante  y su codigo utilizables en servicio de autorizacion</wsdl:documentation>
+      <wsdl:input message="tns:BFEGetPARAM_Tipo_CbteSoapIn" />
+      <wsdl:output message="tns:BFEGetPARAM_Tipo_CbteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_UMed">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera el listado de las unidades de medida  y su codigo utilizables en servicio de autorizacion</wsdl:documentation>
+      <wsdl:input message="tns:BFEGetPARAM_UMedSoapIn" />
+      <wsdl:output message="tns:BFEGetPARAM_UMedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_NCM">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera el listado de productos y su codigo utilizables en servicio de autorizacion</wsdl:documentation>
+      <wsdl:input message="tns:BFEGetPARAM_NCMSoapIn" />
+      <wsdl:output message="tns:BFEGetPARAM_NCMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_MON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera el listado  de monedas y su codigo utilizables en servicio de autorizacion</wsdl:documentation>
+      <wsdl:input message="tns:BFEGetPARAM_MONSoapIn" />
+      <wsdl:output message="tns:BFEGetPARAM_MONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetLast_CMP">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera el ultimos comprobante autorizado</wsdl:documentation>
+      <wsdl:input message="tns:BFEGetLast_CMPSoapIn" />
+      <wsdl:output message="tns:BFEGetLast_CMPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BFEDummy">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Metodo dummy para verificacion de funcionamiento</wsdl:documentation>
+      <wsdl:input message="tns:BFEDummySoapIn" />
+      <wsdl:output message="tns:BFEDummySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetLast_ID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Recupera el ultimo ID y su  fecha </wsdl:documentation>
+      <wsdl:input message="tns:BFEGetLast_IDSoapIn" />
+      <wsdl:output message="tns:BFEGetLast_IDSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpGet">
+    <wsdl:operation name="BFEDummy">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Metodo dummy para verificacion de funcionamiento</wsdl:documentation>
+      <wsdl:input message="tns:BFEDummyHttpGetIn" />
+      <wsdl:output message="tns:BFEDummyHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpPost">
+    <wsdl:operation name="BFEDummy">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Metodo dummy para verificacion de funcionamiento</wsdl:documentation>
+      <wsdl:input message="tns:BFEDummyHttpPostIn" />
+      <wsdl:output message="tns:BFEDummyHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BFEAuthorize">
+      <soap:operation soapAction="http://ar.gov.afip.dif.bfe/BFEAuthorize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetCMP">
+      <soap:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetCMP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_Tipo_doc">
+      <soap:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_Tipo_doc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_Tipo_IVA">
+      <soap:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_Tipo_IVA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_Zonas">
+      <soap:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_Zonas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_Tipo_Cbte">
+      <soap:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_Tipo_Cbte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_UMed">
+      <soap:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_UMed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_NCM">
+      <soap:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_NCM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_MON">
+      <soap:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_MON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetLast_CMP">
+      <soap:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetLast_CMP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEDummy">
+      <soap:operation soapAction="http://ar.gov.afip.dif.bfe/BFEDummy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetLast_ID">
+      <soap:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetLast_ID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BFEAuthorize">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.bfe/BFEAuthorize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetCMP">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetCMP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_Tipo_doc">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_Tipo_doc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_Tipo_IVA">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_Tipo_IVA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_Zonas">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_Zonas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_Tipo_Cbte">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_Tipo_Cbte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_UMed">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_UMed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_NCM">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_NCM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetPARAM_MON">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetPARAM_MON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetLast_CMP">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetLast_CMP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEDummy">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.bfe/BFEDummy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BFEGetLast_ID">
+      <soap12:operation soapAction="http://ar.gov.afip.dif.bfe/BFEGetLast_ID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpGet" type="tns:ServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="BFEDummy">
+      <http:operation location="/BFEDummy" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpPost" type="tns:ServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="BFEDummy">
+      <http:operation location="/BFEDummy" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Web Service orientado  al  servicio  de Bonos Fiscales electronicos</wsdl:documentation>
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="https://wswhomo.afip.gov.ar/wsbfe/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="https://wswhomo.afip.gov.ar/wsbfe/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpGet" binding="tns:ServiceHttpGet">
+      <http:address location="https://wswhomo.afip.gov.ar/wsbfe/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpPost" binding="tns:ServiceHttpPost">
+      <http:address location="https://wswhomo.afip.gov.ar/wsbfe/service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

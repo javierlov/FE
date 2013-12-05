@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://accendo.com.ar/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://accendo.com.ar/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://accendo.com.ar/">
+      <s:element name="PrintCbte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpresaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idsComprobantes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FilePath" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintCbteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PrintCbteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendToFileSystem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpresaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idsComprobantes" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CopiaComprobante" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendToFileSystemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendToFileSystemResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCbte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empresaID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idCbte" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="eCopia" type="tns:TipoDeCopia" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="TipoDeCopia">
+        <s:restriction base="s:string">
+          <s:enumeration value="Original" />
+          <s:enumeration value="Duplicado" />
+          <s:enumeration value="Triplicado" />
+          <s:enumeration value="Copia" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetCbteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCbteResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PrintCbteSoapIn">
+    <wsdl:part name="parameters" element="tns:PrintCbte" />
+  </wsdl:message>
+  <wsdl:message name="PrintCbteSoapOut">
+    <wsdl:part name="parameters" element="tns:PrintCbteResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendToFileSystemSoapIn">
+    <wsdl:part name="parameters" element="tns:SendToFileSystem" />
+  </wsdl:message>
+  <wsdl:message name="SendToFileSystemSoapOut">
+    <wsdl:part name="parameters" element="tns:SendToFileSystemResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCbteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCbte" />
+  </wsdl:message>
+  <wsdl:message name="GetCbteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCbteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FEPrintServiceSoap">
+    <wsdl:operation name="PrintCbte">
+      <wsdl:input message="tns:PrintCbteSoapIn" />
+      <wsdl:output message="tns:PrintCbteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendToFileSystem">
+      <wsdl:input message="tns:SendToFileSystemSoapIn" />
+      <wsdl:output message="tns:SendToFileSystemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCbte">
+      <wsdl:input message="tns:GetCbteSoapIn" />
+      <wsdl:output message="tns:GetCbteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FEPrintServiceSoap" type="tns:FEPrintServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PrintCbte">
+      <soap:operation soapAction="http://accendo.com.ar/PrintCbte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendToFileSystem">
+      <soap:operation soapAction="http://accendo.com.ar/SendToFileSystem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCbte">
+      <soap:operation soapAction="http://accendo.com.ar/GetCbte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FEPrintServiceSoap12" type="tns:FEPrintServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PrintCbte">
+      <soap12:operation soapAction="http://accendo.com.ar/PrintCbte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendToFileSystem">
+      <soap12:operation soapAction="http://accendo.com.ar/SendToFileSystem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCbte">
+      <soap12:operation soapAction="http://accendo.com.ar/GetCbte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FEPrintService">
+    <wsdl:port name="FEPrintServiceSoap" binding="tns:FEPrintServiceSoap">
+      <soap:address location="http://localhost:1841/FEPrint.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FEPrintServiceSoap12" binding="tns:FEPrintServiceSoap12">
+      <soap12:address location="http://localhost:1841/FEPrint.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

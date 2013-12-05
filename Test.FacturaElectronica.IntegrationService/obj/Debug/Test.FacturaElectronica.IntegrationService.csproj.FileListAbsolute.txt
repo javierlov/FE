@@ -1,0 +1,73 @@
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\Test.FacturaElectronica.Service.exe.config
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\obj\Debug\Test.FacturaElectronica.Service.exe
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\obj\Debug\Test.FacturaElectronica.Service.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\Test.FacturaElectronica.Service.exe
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\Test.FacturaElectronica.Service.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Service.Engine.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Utils.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.DBEngine.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Common.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Service.Engine.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.DBEngine.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Utils.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Common.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\obj\Debug\FacturaElectronica.Service.Form1.resources
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\obj\Debug\Test.FacturaElectronica.Service.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.IntegrationService\obj\Debug\Test.FacturaElectronica.IntegrationService.csproj.GenerateResource.Cache
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\Test.FacturaElectronica.Service.exe.config
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\Test.FacturaElectronica.Service.exe
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\Test.FacturaElectronica.Service.pdb
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Service.Engine.dll
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Utils.dll
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Service.Engine.pdb
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Utils.pdb
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\obj\Debug\FacturaElectronica.Service.Form1.resources
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\obj\Debug\Test.FacturaElectronica.Service.Properties.Resources.resources
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\obj\Debug\Test.FacturaElectronica.Service.exe
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.IntegrationService\obj\Debug\Test.FacturaElectronica.Service.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\bin\Debug\app.config
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\bin\Debug\Test.FacturaElectronica.Service.exe.config
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\bin\Debug\Test.FacturaElectronica.Service.exe
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\bin\Debug\Test.FacturaElectronica.Service.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Service.Engine.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Utils.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Service.Engine.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Utils.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\obj\Debug\FacturaElectronica.Service.Form1.resources
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\obj\Debug\Test.FacturaElectronica.Service.Properties.Resources.resources
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\obj\Debug\GenerateResource.read.1.tlog
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\obj\Debug\GenerateResource.write.1.tlog
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\obj\Debug\Test.FacturaElectronica.Service.exe
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.IntegrationService\obj\Debug\Test.FacturaElectronica.Service.pdb
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\bin\Debug\app.config
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\bin\Debug\Test.FacturaElectronica.Service.exe.config
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\bin\Debug\Test.FacturaElectronica.Service.exe
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\bin\Debug\Test.FacturaElectronica.Service.pdb
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Service.Engine.dll
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Utils.dll
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Service.Engine.pdb
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\bin\Debug\FacturaElectronica.Utils.pdb
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\obj\Debug\FacturaElectronica.Service.Form1.resources
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\obj\Debug\Test.FacturaElectronica.Service.Properties.Resources.resources
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\obj\Debug\GenerateResource.read.1.tlog
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\obj\Debug\GenerateResource.write.1.tlog
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\obj\Debug\Test.FacturaElectronica.Service.exe
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.IntegrationService\obj\Debug\Test.FacturaElectronica.Service.pdb

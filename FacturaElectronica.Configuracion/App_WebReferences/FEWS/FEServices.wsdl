@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ProcesarUnaFactura">
+        <s:complexType />
+      </s:element>
+      <s:element name="ProcesarUnaFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcesarUnaFacturaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasBienesServicios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="estaEmpresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlDocument" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasBienesServiciosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcesarLoteFacturasBienesServiciosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasExportacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="estaEmpresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlDocument" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasExportacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcesarLoteFacturasExportacionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasBienesCapital">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="estaEmpresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlDocument" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarLoteFacturasBienesCapitalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcesarLoteFacturasBienesCapitalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InicializarTablasAFIPBienesCapital">
+        <s:complexType />
+      </s:element>
+      <s:element name="InicializarTablasAFIPBienesCapitalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InicializarTablasAFIPBienesCapitalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InicializarTablasAFIPExportacion">
+        <s:complexType />
+      </s:element>
+      <s:element name="InicializarTablasAFIPExportacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InicializarTablasAFIPExportacionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ProcesarUnaFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarUnaFactura" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarUnaFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarUnaFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasBienesServiciosSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasBienesServicios" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasBienesServiciosSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasBienesServiciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasExportacionSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasExportacion" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasExportacionSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasExportacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasBienesCapitalSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasBienesCapital" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarLoteFacturasBienesCapitalSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarLoteFacturasBienesCapitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="InicializarTablasAFIPBienesCapitalSoapIn">
+    <wsdl:part name="parameters" element="tns:InicializarTablasAFIPBienesCapital" />
+  </wsdl:message>
+  <wsdl:message name="InicializarTablasAFIPBienesCapitalSoapOut">
+    <wsdl:part name="parameters" element="tns:InicializarTablasAFIPBienesCapitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="InicializarTablasAFIPExportacionSoapIn">
+    <wsdl:part name="parameters" element="tns:InicializarTablasAFIPExportacion" />
+  </wsdl:message>
+  <wsdl:message name="InicializarTablasAFIPExportacionSoapOut">
+    <wsdl:part name="parameters" element="tns:InicializarTablasAFIPExportacionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FEServicesSoap">
+    <wsdl:operation name="ProcesarUnaFactura">
+      <wsdl:input message="tns:ProcesarUnaFacturaSoapIn" />
+      <wsdl:output message="tns:ProcesarUnaFacturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesServicios">
+      <wsdl:input message="tns:ProcesarLoteFacturasBienesServiciosSoapIn" />
+      <wsdl:output message="tns:ProcesarLoteFacturasBienesServiciosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasExportacion">
+      <wsdl:input message="tns:ProcesarLoteFacturasExportacionSoapIn" />
+      <wsdl:output message="tns:ProcesarLoteFacturasExportacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesCapital">
+      <wsdl:input message="tns:ProcesarLoteFacturasBienesCapitalSoapIn" />
+      <wsdl:output message="tns:ProcesarLoteFacturasBienesCapitalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InicializarTablasAFIPBienesCapital">
+      <wsdl:input message="tns:InicializarTablasAFIPBienesCapitalSoapIn" />
+      <wsdl:output message="tns:InicializarTablasAFIPBienesCapitalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InicializarTablasAFIPExportacion">
+      <wsdl:input message="tns:InicializarTablasAFIPExportacionSoapIn" />
+      <wsdl:output message="tns:InicializarTablasAFIPExportacionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FEServicesSoap" type="tns:FEServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcesarUnaFactura">
+      <soap:operation soapAction="http://tempuri.org/ProcesarUnaFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesServicios">
+      <soap:operation soapAction="http://tempuri.org/ProcesarLoteFacturasBienesServicios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasExportacion">
+      <soap:operation soapAction="http://tempuri.org/ProcesarLoteFacturasExportacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesCapital">
+      <soap:operation soapAction="http://tempuri.org/ProcesarLoteFacturasBienesCapital" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InicializarTablasAFIPBienesCapital">
+      <soap:operation soapAction="http://tempuri.org/InicializarTablasAFIPBienesCapital" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InicializarTablasAFIPExportacion">
+      <soap:operation soapAction="http://tempuri.org/InicializarTablasAFIPExportacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FEServicesSoap12" type="tns:FEServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcesarUnaFactura">
+      <soap12:operation soapAction="http://tempuri.org/ProcesarUnaFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesServicios">
+      <soap12:operation soapAction="http://tempuri.org/ProcesarLoteFacturasBienesServicios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasExportacion">
+      <soap12:operation soapAction="http://tempuri.org/ProcesarLoteFacturasExportacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarLoteFacturasBienesCapital">
+      <soap12:operation soapAction="http://tempuri.org/ProcesarLoteFacturasBienesCapital" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InicializarTablasAFIPBienesCapital">
+      <soap12:operation soapAction="http://tempuri.org/InicializarTablasAFIPBienesCapital" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InicializarTablasAFIPExportacion">
+      <soap12:operation soapAction="http://tempuri.org/InicializarTablasAFIPExportacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FEServices">
+    <wsdl:port name="FEServicesSoap" binding="tns:FEServicesSoap">
+      <soap:address location="http://localhost:1114/FEServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FEServicesSoap12" binding="tns:FEServicesSoap12">
+      <soap12:address location="http://localhost:1114/FEServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

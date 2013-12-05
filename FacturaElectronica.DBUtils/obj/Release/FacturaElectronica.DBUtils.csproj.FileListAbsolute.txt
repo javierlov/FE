@@ -1,0 +1,5 @@
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBUtils\bin\FacturaElectronica.DBUtils.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBUtils\bin\FacturaElectronica.DBUtils.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBUtils\obj\Release\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBUtils\obj\Release\FacturaElectronica.DBUtils.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.DBUtils\obj\Release\FacturaElectronica.DBUtils.pdb

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Proyectos\FacturaElectronicaV1\PrecompiledWeb\20131202\FacturaElectronica.Impresion" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="FEPrint.asmx" publishTime="08/12/2010 18:39:12" />
+    <file relUrl="bin/DevExpress.Data.v10.1.dll" publishTime="05/18/2010 12:49:32" />
+    <file relUrl="bin/FacturaElectronica.DBEngine.dll" publishTime="12/03/2013 10:45:30" />
+    <file relUrl="bin/DevExpress.XtraCharts.v10.1.dll" publishTime="05/18/2010 12:54:50" />
+    <file relUrl="bin/DevExpress.XtraPivotGrid.v10.1.Core.xml" publishTime="05/18/2010 12:48:30" />
+    <file relUrl="bin/DevExpress.XtraPivotGrid.v10.1.xml" publishTime="05/18/2010 12:48:30" />
+    <file relUrl="bin/DevExpress.XtraPivotGrid.v10.1.dll" publishTime="05/18/2010 12:52:58" />
+    <file relUrl="bin/FacturaElectronica.WSPrint.dll" publishTime="12/03/2013 10:45:57" />
+    <file relUrl="bin/DevExpress.Data.v10.1.xml" publishTime="05/18/2010 12:48:24" />
+    <file relUrl="bin/DevExpress.Charts.v10.1.Core.dll" publishTime="05/18/2010 12:54:23" />
+    <file relUrl="bin/DevExpress.XtraRichEdit.v10.1.xml" publishTime="05/18/2010 12:48:30" />
+    <file relUrl="bin/DevExpress.XtraPivotGrid.v10.1.Core.dll" publishTime="05/18/2010 12:52:56" />
+    <file relUrl="bin/DevExpress.XtraRichEdit.v10.1.dll" publishTime="05/18/2010 12:52:40" />
+    <file relUrl="bin/DevExpress.Utils.v10.1.dll" publishTime="05/18/2010 12:50:50" />
+    <file relUrl="bin/FacturaElectronica.Common.pdb" publishTime="12/03/2013 10:45:30" />
+    <file relUrl="bin/FacturaElectronica.Utils.pdb" publishTime="12/03/2013 10:45:30" />
+    <file relUrl="bin/FacturaElectronica.WSPrint.pdb" publishTime="12/03/2013 10:45:57" />
+    <file relUrl="bin/DevExpress.Utils.v10.1.xml" publishTime="05/18/2010 12:48:25" />
+    <file relUrl="bin/FacturaElectronica.Common.dll" publishTime="12/03/2013 10:45:30" />
+    <file relUrl="bin/DevExpress.RichEdit.v10.1.Core.dll" publishTime="05/18/2010 12:52:36" />
+    <file relUrl="bin/DevExpress.XtraCharts.v10.1.xml" publishTime="05/18/2010 12:48:25" />
+    <file relUrl="bin/DevExpress.XtraReports.v10.1.dll" publishTime="05/18/2010 12:59:32" />
+    <file relUrl="bin/FacturaElectronica.DBEngine.pdb" publishTime="12/03/2013 10:45:30" />
+    <file relUrl="Web.config" publishTime="07/04/2011 17:56:00" />
+    <file relUrl="bin/DevExpress.RichEdit.v10.1.Core.xml" publishTime="05/18/2010 12:48:30" />
+    <file relUrl="bin/app.config" publishTime="11/11/2013 14:10:48" />
+    <file relUrl="bin/DevExpress.XtraReports.v10.1.xml" publishTime="05/18/2010 12:48:26" />
+    <file relUrl="bin/FacturaElectronica.Utils.dll" publishTime="12/03/2013 10:45:30" />
+    <file relUrl="Pictures/Logo5.jpg" publishTime="10/22/2012 16:56:37" />
+  </publishProfile>
+</publishData>

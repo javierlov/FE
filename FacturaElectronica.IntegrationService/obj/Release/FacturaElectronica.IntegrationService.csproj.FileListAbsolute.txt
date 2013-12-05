@@ -1,0 +1,51 @@
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Service.exe
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Service.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Service.Engine.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Utils.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Service.Engine.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Utils.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Service.Engine.XmlSerializers.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\obj\Release\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.IntegrationService.FacturaElectronica.resources
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.IntegrationService.ProjectInstaller.resources
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.IntegrationService.csproj.GenerateResource.Cache
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.Service.exe
+C:\Proyectos\FacturaElectronica\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.Service.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Service.exe
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Service.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Service.Engine.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Utils.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Service.Engine.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Utils.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\bin\Release\FacturaElectronica.Service.Engine.XmlSerializers.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\obj\Release\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.IntegrationService.FacturaElectronica.resources
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.IntegrationService.ProjectInstaller.resources
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.Service.exe
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.Service.pdb
+C:\Program Files\Accendo\Factura Electronica\FacturaElectronica.Service.exe.config
+C:\Program Files\Accendo\Factura Electronica\FacturaElectronica.Service.exe.manifest
+C:\Program Files\Accendo\Factura Electronica\FacturaElectronica.Service.application
+C:\Program Files\Accendo\Factura Electronica\FacturaElectronica.Service.exe
+C:\Program Files\Accendo\Factura Electronica\FacturaElectronica.Service.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.IntegrationService\obj\Release\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.IntegrationService.FacturaElectronica.resources
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.IntegrationService.ProjectInstaller.resources
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.IntegrationService\obj\Release\GenerateResource.read.1.tlog
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.IntegrationService\obj\Release\GenerateResource.write.1.tlog
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.Service.exe.manifest
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.Service.application
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.Service.exe
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.Service.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\obj\Release\GenerateResource.read.1.tlog
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\obj\Release\GenerateResource.write.1.tlog
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.Service.exe.manifest
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.IntegrationService\obj\Release\FacturaElectronica.Service.application

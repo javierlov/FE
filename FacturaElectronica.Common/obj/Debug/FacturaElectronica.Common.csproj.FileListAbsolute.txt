@@ -1,0 +1,20 @@
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.Common\bin\Debug\FacturaElectronica.Common.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.Common\bin\Debug\FacturaElectronica.Common.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.Common\obj\Debug\FacturaElectronica.Common.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.Common\obj\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Common\bin\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Common\bin\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Common\obj\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.Common\obj\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.Common\bin\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.Common\bin\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.Common\obj\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.Common\obj\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.Common\bin\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.Common\bin\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.Common\obj\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.Common\obj\Debug\FacturaElectronica.Common.pdb

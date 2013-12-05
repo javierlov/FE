@@ -1,0 +1,50 @@
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.WebServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.WebServices\obj\Debug\FacturaElectronica.WebServices.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.WebServices.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.WebServices.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.Common.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.DBEngine.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.PrintEngine.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.Utils.dll
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.Common.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.DBEngine.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.PrintEngine.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.Utils.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\FacturaElectronica.WebServices\obj\Debug\FacturaElectronica.WebServices.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.WebServices.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.WebServices.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.Utils.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.WebServices\bin\FacturaElectronica.Utils.pdb
+C:\Proyectos\FacturaElectronica\FacturaElectronica.WebServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronica\FacturaElectronica.WebServices\obj\Debug\FacturaElectronica.WebServices.dll
+C:\Proyectos\FacturaElectronica\FacturaElectronica.WebServices\obj\Debug\FacturaElectronica.WebServices.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.WebServices\bin\app.config
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.WebServices\bin\Web.config
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.WebServices\bin\FacturaElectronica.WebServices.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.WebServices\bin\FacturaElectronica.WebServices.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.WebServices\bin\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.WebServices\bin\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.WebServices\bin\FacturaElectronica.Utils.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.WebServices\bin\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.WebServices\bin\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.WebServices\bin\FacturaElectronica.Utils.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.WebServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.WebServices\obj\Debug\FacturaElectronica.WebServices.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\FacturaElectronica.WebServices\obj\Debug\FacturaElectronica.WebServices.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.WebServices\bin\app.config
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.WebServices\bin\Web.config
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.WebServices\bin\FacturaElectronica.WebServices.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.WebServices\bin\FacturaElectronica.WebServices.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.WebServices\bin\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.WebServices\bin\FacturaElectronica.DBEngine.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.WebServices\bin\FacturaElectronica.Utils.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.WebServices\bin\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.WebServices\bin\FacturaElectronica.DBEngine.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.WebServices\bin\FacturaElectronica.Utils.pdb
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.WebServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.WebServices\obj\Debug\FacturaElectronica.WebServices.dll
+C:\Proyectos\FacturaElectronicaV1\FacturaElectronica.WebServices\obj\Debug\FacturaElectronica.WebServices.pdb

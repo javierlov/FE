@@ -1,0 +1,62 @@
+-----Mail de Pablo----- ------------------------ ------------------------
+Hola Javi, además de la tabla EquivAFIPCodigoNCM, solo resta crear EquivAFIPZona con la misma estructura de la que ya creamos.
+
+En cuanto a los datos nos debemos asegurar que:
+
+AFIPZonas: contenga los registros de TABLA PROVINCIAS
+AFIPTributos: TABLA OTROS TRIBUTOS
+AFIPTipoDocumento: TABLA DOC ID COMPRADOR
+
+Saludos,
+Pablo.
+------------------------ ------------------------ ------------------------
+Para insertar AFIPZona
+Primero limpiar la tabla destino AFIPZona
+
+En este script esta el ejemplo
+LIMIARTABLA.AFIPZona.sql
+
+Luego en la base de Datos hacer: Tasks / imports data
+Seleccionar en Data source xls y seleccionar el archivo "ProvinciasM.xls" 
+En destination la base destino
+La opcion 1 copy data from one or more tables or views
+Luego seleccionar destination : la tabla AFIPZona
+
+Boton Edit Mappings y mapear los campos.
+next hasta finish deberia andar bien
+Al final el wizard nos informa sobre la importacion
+------------------------ ------------------------ ------------------------
+Para insertar AFIPTributo
+Primero limpiar la tabla destino AFIPTributo
+
+En este script esta el ejemplo
+LIMIARTABLA.AFIPTributo.sql
+
+Luego en la base de Datos hacer: Tasks / imports data
+Seleccionar en Data source xls y seleccionar el archivo "TributosM.xls" 
+En destination la base destino
+La opcion 1 copy data from one or more tables or views
+Luego seleccionar destination : la tabla AFIPTributo
+
+Boton Edit Mappings y mapear los campos.
+next hasta finish deberia andar bien
+
+Al final el wizard nos informa sobre la importacion
+------------------------ ------------------------ ------------------------
+Para insertar AFIPTipoDocumento
+Primero limpiar la tabla destino AFIPTipoDocumento
+
+En este script esta el ejemplo
+LIMIARTABLA.AFIPTipoDocumento.sql
+
+Luego en la base de Datos hacer: Tasks / imports data
+Seleccionar en Data source xls y seleccionar el archivo "CompradorM.xls" 
+En destination la base destino
+La opcion 1 copy data from one or more tables or views
+Luego seleccionar destination : la tabla AFIPTipoDocumento
+
+Boton Edit Mappings y mapear los campos.
+next hasta finish deberia andar bien
+
+Al final el wizard nos informa sobre la importacion
+------------------------ ------------------------ ------------------------

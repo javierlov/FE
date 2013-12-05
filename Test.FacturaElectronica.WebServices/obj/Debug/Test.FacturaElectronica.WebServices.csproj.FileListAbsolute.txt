@@ -1,0 +1,44 @@
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.WebServices\bin\Debug\Test.FacturaElectronica.WebServices.exe.config
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.exe
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.WebServices\bin\Debug\Test.FacturaElectronica.WebServices.exe
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.WebServices\bin\Debug\Test.FacturaElectronica.WebServices.pdb
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.Form1.resources
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Desktop\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.csproj.GenerateResource.Cache
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.WebServices\bin\Debug\Test.FacturaElectronica.WebServices.exe.config
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.WebServices\bin\Debug\Test.FacturaElectronica.WebServices.exe
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.WebServices\bin\Debug\Test.FacturaElectronica.WebServices.pdb
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.Form1.resources
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.Properties.Resources.resources
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\GenerateResource.read.1.tlog
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.exe
+C:\Proyectos\FacturaElectronica\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.WebServices\bin\Debug\Test.FacturaElectronica.WebServices.exe.config
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.WebServices\bin\Debug\Test.FacturaElectronica.WebServices.exe
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.WebServices\bin\Debug\Test.FacturaElectronica.WebServices.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.WebServices\bin\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.WebServices\bin\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.WebServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.Form1.resources
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.Properties.Resources.resources
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.WebServices\obj\Debug\GenerateResource.read.1.tlog
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.WebServices\obj\Debug\GenerateResource.write.1.tlog
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.exe
+C:\Proyectos\FacturaElectronicaV1.SPRAYETTE\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.pdb
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.WebServices\bin\Debug\Test.FacturaElectronica.WebServices.exe.config
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.WebServices\bin\Debug\Test.FacturaElectronica.WebServices.exe
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.WebServices\bin\Debug\Test.FacturaElectronica.WebServices.pdb
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.WebServices\bin\Debug\FacturaElectronica.Common.dll
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.WebServices\bin\Debug\FacturaElectronica.Common.pdb
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.WebServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.Form1.resources
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.Properties.Resources.resources
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.WebServices\obj\Debug\GenerateResource.read.1.tlog
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.WebServices\obj\Debug\GenerateResource.write.1.tlog
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.exe
+C:\Proyectos\FacturaElectronicaV1\Test.FacturaElectronica.WebServices\obj\Debug\Test.FacturaElectronica.WebServices.pdb
